@@ -1,0 +1,56 @@
+@media screen and (max-width: 768px) {
+	.page-header__wrap,
+	.container,
+	.footer-cont {
+		max-width: 701px;
+		min-width: 600px;
+	}
+	
+	.container {
+		position: relative;
+	}
+	// .sidebar {
+	// 	position: absolute;
+	// }
+
+	.navigation {
+		position: absolute;
+		top: -60px;
+		right: 0;
+		width: 250px;
+	}
+
+	.contacts {
+		display: none;
+	}
+
+	.main-content {
+		float: none;
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.navigation__trigger {
+		display: block;
+		width: 25px;
+		height: 21px;
+		background: url('../images/menu.png');
+		float: right;
+		text-indent: 999999px;
+		overflow: hidden;
+		margin-top: 12px;
+		margin-left: 58px;
+
+		&:hover {
+			opacity: .6;
+			transition: 0.5s;
+		}
+	}
+
+
+
+}
+
+@media screen and (max-width: 320px) {
+	
+}
