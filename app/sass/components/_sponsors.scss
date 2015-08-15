@@ -1,0 +1,23 @@
+.sponsors{
+	margin-bottom: 172px;
+	
+}
+
+.sponsors__title {
+	@extend  .title;
+	text-transform: uppercase;
+}
+
+.sponsors__list{
+	list-style: none;
+	padding-left: 0;
+}
+
+.sponsors__item{
+	min-height: 164px;
+	position: relative;
+
+	&>img{
+		@include centerer (true, true);
+	}
+}

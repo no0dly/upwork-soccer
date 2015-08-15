@@ -1,8 +1,24 @@
 .bxslider{
-	padding: 0;
-	margin:  0;
-}
+	padding-left: 0;
 
-.bx-wrapper{
-	margin: 72px 0;
+}
+.bx-wrapper{ margin: 72px 0;}
+.bx-prev,
+.bx-next {
+	
+	width: 32px;
+	height: 32px;
+
+	
+/* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */
+
+	
+}
+.bx-prev {
+	left: -12px;
+	background:url('../images/bx-prev.png') no-repeat;
+}
+.bx-next{
+	right: -12px;
+	background:url('../images/bx-next.png') no-repeat;
 }

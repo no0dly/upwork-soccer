@@ -1,7 +1,14 @@
-var app = (function () {
+// var app = (function () {
 
-	$('.bxslider').bxSlider({
+// 	$('.bxslider').bxSlider({
 
-	});
+// 	});
 
-}());
+// }());
+
+
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+  	
+  });
+});
