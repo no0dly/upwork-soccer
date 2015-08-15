@@ -1,0 +1,44 @@
+.zap-feature{
+	margin-bottom: 230px;
+}
+
+.zap-feature__text{
+	font-family: 'Myriad Pro';
+	color:  #959595;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0.182px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.zap-feature__link{
+	display: block;
+	text-decoration: none;
+	font-family: 'Myriad Pro';
+	color:  #2a99d8;
+	font-size: 14px;
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: 0.182px;
+	text-align: right;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.zap-feature__title{
+	margin: 0;
+	padding: 0;
+	font-family: 'Myriad Pro';
+	color:  #494949;
+	font-size: 33.83px;
+	font-weight: 400;
+	letter-spacing: 0.44px;
+	text-align: right;
+
+
+
+	span { 	font-weight: 700; }
+}

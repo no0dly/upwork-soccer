@@ -1,12 +1,19 @@
-/* --------- mixins --------- */
-
-@import "_mixins"; 
-
 /* --------- fonts --------- */
-
 @import "fonts";
+
+/* --------- mixins --------- */
+@import "components/variables"; 
+@import "components/mixins"; 
+
+
 
 /* --------- components --------- */
 @import "components/_grid";
 @import "components/_common";
-@import "components/_responsive";
+@import "components/_navigation";
+@import "components/_bxslider";
+@import "components/_zap-feature";
+@import "components/_sponsors";
+@import "components/_about";
+@import "components/_forms";
+

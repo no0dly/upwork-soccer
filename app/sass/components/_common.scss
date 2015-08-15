@@ -1,27 +1,135 @@
+// Reset the box-sizing
+//
+// Heads up! This reset may cause conflicts with some third-party widgets.
+// For recommendations on resolving such conflicts, see
+// http://getbootstrap.com/getting-started/#third-box-sizing
+* {
+  @include box-sizing(border-box);
+}
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
 html,
 body {
 	height: 100%;
 }
 
 body {
-
-	font-family: "fira_sansbook";
+	background:#e8e8e8 url('../images/pattern.png');
+	border-top:27px solid #b81401;
 }
-
+p {
+	margin: 0;
+	padding: 0;
+}
 /*sticky footer*/
-.wraper {
+.wrapper {
 	min-height: 100%;
-	margin-bottom: -83px;
 }
 
-.wraper:after {
+.wrapper:after {
 	content: "";
 	display: block;
 }
 
-.wraper:after,
+.wrapper:after,
 .page-footer {
 	height: 80px;
 }
 /*end of sticky footer*/
 
+
+
+
+.hide {
+	position: absolute;
+	left: -9999px;
+}
+
+.title{
+	font-family: 'Myriad Pro';
+	color:  #323232;
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 0.39px;
+	text-align: center;
+	line-height: 72px;
+	margin: 0;
+	display: block;
+
+	&:before, &:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 2px;
+		border-top:1px solid rgba(200, 200, 200,0.9); 		
+		background:#fcfafa;
+	}
+}
+
+.page-header {margin-bottom: 76px;}
+
+.motto__title{
+	@extend  .title;
+	margin-bottom: 20px;
+}
+.motto__quote{
+	font-family: 'Cambria';
+	color:  #3c3b3b;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 24px;
+	text-align: center;
+}
+
+.content {
+	font-family: 'Myriad Pro';
+	color: #383838;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 20px;
+	text-align: left;
+	letter-spacing: 0.234px;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+	margin-bottom: 240px;
+}
+
+.content__title {
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 0;
+	margin: 0 0 30px;
+}
+
+.content__more{
+	color: #383838;
+	text-decoration: none;
+}
+
+.team__title{
+	@extend  .title;
+}
+
+.page-footer__wrap{
+	@include clearfix;
+	border-radius: 10px 10px 0 0 ;
+	border:2px solid  #000000;
+	border-bottom: none;
+	background-color:  #b81401;
+	padding: 25px;
+}
+
+
+.copy { 
+	text-align: right;
+}
+
+.copy__text {
+	font-family: 'Myriad Pro';
+	color:  #e9e9e9;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+}

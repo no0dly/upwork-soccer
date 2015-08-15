@@ -1,0 +1,54 @@
+.bxslider{
+	padding-left: 0;
+
+}
+
+.bxslider img {
+	width: 100%;
+}
+
+.bx-wrapper{ 
+	margin: 72px 0;
+}
+.bx-prev,
+.bx-next {
+	
+	width: 32px;
+	height: 32px;
+
+	
+/* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */
+
+}
+.bx-prev {
+	left: -12px;
+	background:url('../images/bx-prev.png') no-repeat;
+}
+.bx-next{
+	right: -12px;
+	background:url('../images/bx-next.png') no-repeat;
+}
+
+.bx-prev,
+.bx-next {
+	top: 50%;
+	margin-top: -15px;
+}
+
+/*pager*/
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: url('../images/radio.png') no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+
+	&:hover {
+		background: url('../images/radio-selected.png') no-repeat;
+	}
+
+	&.active {
+		background: url('../images/radio-selected.png') no-repeat;
+	}
+
+}

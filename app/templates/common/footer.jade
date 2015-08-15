@@ -1,16 +1,22 @@
 footer.page-footer
 	.container
 		.row
-			.col-lg-12
-				.footer__logo
-					img.footer__img(src="images/footer-logo.png" alt="footer logo")
-				.copy
-					.copy__text Design by Veroo 2015
+			.page-footer__wrap
+				.col-xs-6
+					a(href="").page-footer__logo
+						img(src="images/footer-logo.png" alt="footer logo")
+				.col-xs-6
+					.copy
+						p.copy__text Design by Veroo 2015
 
 <!-- build:js js/vendor.js -->
 //bower:js
-script(src='/bower/jquery/dist/jquery.js')
-script(src='/bower/bxslider/source/jquery.bxSlider.js')
+script(src='/bower/jquery/jquery.js')
+script(src='/bower/slider/jquery.bxSlider.js')
+script(src='/bower/fancybox/source/jquery.fancybox.pack.js')
+//- script(type="text/javascript" src="/bower/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5")
+//- script(type="text/javascript" src="/bower/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6")
+//- script(type="text/javascript" src="/bower/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7")
 //endbower
 <!-- endbuild -->
 

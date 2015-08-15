@@ -1,12 +1,13 @@
 header.page-header
 	.container
 		.row
-			.col-lg-12
+			.col-xs-4
 				.logo
 					img.logo__img(src="images/logo.png" alt="soccer logo")
-					span.logo__text soccer website
+					span.hide soccer website
+			.col-xs-8
 				nav.navigation
 					ul.navigation__list
-						each item in ['Tournament', 'teams', 'Sponsors', 'join', 'about us']
+						each item in ['tournament', 'teams', 'sponsors', 'join', 'about us']
 							li.navigation__item
 								a.navigation__link(href="#")= item
