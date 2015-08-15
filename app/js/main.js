@@ -1,5 +1,7 @@
 var app = (function () {
 
-	$('.bxslider').bxSlider();
+	$('.bxslider').bxSlider({
+
+	});
 
 }());
