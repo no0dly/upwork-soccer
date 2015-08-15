@@ -1,12 +1,13 @@
-/* --------- mixins --------- */
-
-@import "_mixins"; 
-
 /* --------- fonts --------- */
-
 @import "fonts";
+
+/* --------- mixins --------- */
+@import "components/variables"; 
+@import "components/mixins"; 
+
+
 
 /* --------- components --------- */
 @import "components/_grid";
 @import "components/_common";
-@import "components/_responsive";
+// @import "components/_responsive";
