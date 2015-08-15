@@ -25,26 +25,83 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="logo"><img src="images/logo.png" alt="soccer logo" class="logo__img"><span class="hide">soccer website</span></div>
+            </div>
+            <div class="col-xs-6">
+              <nav class="navigation">
+                <ul class="navigation__list">
+                  <li class="navigation__item"><a href="#" class="navigation__link">tournament</a></li>
+                  <li class="navigation__item"><a href="#" class="navigation__link">teams</a></li>
+                  <li class="navigation__item"><a href="#" class="navigation__link">sponsors</a></li>
+                  <li class="navigation__item"><a href="#" class="navigation__link">join</a></li>
+                  <li class="navigation__item"><a href="#" class="navigation__link">about us</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
       <div class="container">
         <div class="row">
-          <div class="col-xs-6">
-            <div class="logo"><img src="images/logo.png" alt="soccer logo" class="logo__img"><span class="hide">soccer website</span></div>
+          <div class="col-xs-12">
+            <div class="motto">
+              <h2 class="motto__title">Your about us information would fit here nicely.</h2>
+              <p class="motto__quote">Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum
+                adipiscing wisi.</p>
+            </div>
           </div>
-          <div class="col-xs-6">
-            <nav class="navigation">
-              <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link">tournament</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">teams</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">sponsors</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">join</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">about us</a></li>
-              </ul>
-            </nav>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="bxslider">
+              <li><img src="images/slider-first.png" alt="first slide"></li>
+              <li><img src="images/slider-first.png" alt="second slide"></li>
+              <li><img src="images/slider-first.png" alt="third slide"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-5">
+            <h2 class="column__title">Grandstand tournaments</h2>
+            <p class="column__text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. <a href="#" class="read_more">/ ... /</a></p>
+          </div>
+          <div class="col-xs-5 col-xs-offset-2">
+            <h2 class="column__title">Grandstand tournaments</h2>
+            <p class="column__text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. <a href="#" class="read_more">/ ... /</a></p>
+          </div>
+        </div>
+        <div class="roww"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer__logo"><img src="images/footer-logo.png" alt="footer logo" class="footer__img"></div>
+            <div class="copy">
+              <div class="copy__text">Design by Veroo 2015</div>
+            </div>
           </div>
         </div>
       </div>
-    </header>
+    </footer>
+    <!-- build:js js/vendor.js -->
+    <!--bower:js-->
+    <script src="/bower/jquery/dist/jquery.js"></script>
+    <script src="/bower/bxslider/source/jquery.bxSlider.js"></script>
+    <!--endbower-->
+    <!-- endbuild -->
+    <!-- build:js js/main.js -->
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
   </body>
 
 </html>

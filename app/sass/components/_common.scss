@@ -18,11 +18,12 @@ body {
 
 body {
 	background:#e8e8e8 url('../images/pattern.png');
-	// background-repeat: no-repeat;
-	font-family: "fira_sansbook";
+	border-top:27px solid #b81401;
 }
-
-
+p {
+	margin: 0;
+	padding: 0;
+}
 /*sticky footer*/
 .wraper {
 	min-height: 100%;
@@ -45,13 +46,38 @@ body {
 	left: -9999px;
 }
 
+.title{
+	font-family: 'Myriad Pro';
+	color:  #323232;
+	font-size: 30px;
+	font-weight: 400;
+	letter-spacing: 0.39px;
+	text-align: center;
+	line-height: 72px;
+	margin: 0;
+	display: block;
 
-.navigation__list{
-	list-style: none;
-	padding-left: 0;
+	&:before, &:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 2px;
+		border-top:1px solid rgba(200, 200, 200,0.9); 		
+		background:#fcfafa;
+	}
 }
 
-.navigation__item{
-	display: inline-block;
-}
+.page-header {margin-bottom: 76px;}
 
+.motto__title{
+	  @extend  .title;
+	  margin-bottom: 20px;
+}
+.motto__quote{
+	font-family: 'Cambria';
+	color:  #3c3b3b;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 24px;
+	text-align: center;
+}
