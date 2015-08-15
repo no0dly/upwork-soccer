@@ -1,14 +1,27 @@
+// Reset the box-sizing
+//
+// Heads up! This reset may cause conflicts with some third-party widgets.
+// For recommendations on resolving such conflicts, see
+// http://getbootstrap.com/getting-started/#third-box-sizing
+* {
+  @include box-sizing(border-box);
+}
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
 html,
 body {
 	height: 100%;
 }
 
 body {
-	background:url('../images/pattern.png');
-	background-repeat: no-repeat;
-	// background-color: #e8e8e8;
+	background:#e8e8e8 url('../images/pattern.png');
+	// background-repeat: no-repeat;
 	font-family: "fira_sansbook";
 }
+
 
 /*sticky footer*/
 .wraper {
@@ -26,4 +39,19 @@ body {
 	height: 80px;
 }
 /*end of sticky footer*/
+
+.hide {
+	position: absolute;
+	left: -9999px;
+}
+
+
+.navigation__list{
+	list-style: none;
+	padding-left: 0;
+}
+
+.navigation__item{
+	display: inline-block;
+}
 
