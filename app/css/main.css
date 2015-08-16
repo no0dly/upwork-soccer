@@ -566,6 +566,9 @@ p {
   margin: 0;
   padding: 0; }
 
+.active {
+  color: #000; }
+
 /*sticky footer*/
 /*end of sticky footer*/
 .hide {
@@ -702,12 +705,16 @@ p {
   .navigation .container {
     padding: 0; }
 
+.navigation .active {
+  color: #000; }
+
 .navigation__trigger {
   background: #b81401;
   height: 40px;
   text-align: right;
   vertical-align: middle;
   padding: 10px;
+  display: none;
   display: none; }
 
 .navigation__img {
@@ -744,7 +751,8 @@ p {
   line-height: 24px;
   text-align: center; }
   .navigation__link:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #000; }
 
 .bxslider {
   padding-left: 0; }

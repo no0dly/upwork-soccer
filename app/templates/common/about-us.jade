@@ -1,9 +1,10 @@
-.about
+.about(id="about-us").tracked
 	.container
 		.row
 			.about__block.col-sm-4.col-xs-12
 				.about__title Contact Us
-				dl.contacts__list
+
+				dl.contacts
 					dt.contacts__term P:
 					dd.contacts__def +48 12 000 000 000
 					dt.contacts__term E:
@@ -11,7 +12,7 @@
 					dt.contacts__term W:
 					dd.contacts__def www.GrandStand.com
 					dt.contacts__term A:
-					dd.contacts__def Poland, Cracow, Zielona 10     
+					dd.contacts__def Poland, Cracow, Zielona 10
 
 			.about__block.col-sm-4.col-xs-12
 				.about__title Get Social
@@ -36,9 +37,14 @@
 						a.social__link(href="#")
 							img.social__img(src="images/icon-flik.png")
 							span.hide nnn
+
 			.about__block.col-sm-4.col-xs-12
 				.about__title Contact Us
 				.join
+
+			.col-xs-4
+				.join(id="join").tracked
+
 					form.join__form(action="")
 						.input-group
 							input.input-text(type="text" placeholder="text")

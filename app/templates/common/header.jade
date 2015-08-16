@@ -5,11 +5,17 @@ header.page-header
 				img(src="../images/menu.svg", alt="menu").navigation__img.visible-sm
 
 			ul.navigation__list
-				each item in ['tournament', 'teams', 'sponsors', 'join', 'about us']
 					li.navigation__item
-						a.navigation__link(href="#")= item
-	.container
-		
+						a.navigation__link(href="#tournament") tournament
+					li.navigation__item
+						a.navigation__link(href="#teams") teams
+					li.navigation__item
+						a.navigation__link(href="#sponsors") sponsors
+					li.navigation__item
+						a.navigation__link(href="#join") join
+					li.navigation__item
+						a.navigation__link(href="#about-us") about us
+
 		a(href="").logo
 			.logo__wrap
 				img.logo__img(src="images/logo.png" alt="soccer logo")

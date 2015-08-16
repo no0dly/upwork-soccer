@@ -18,13 +18,19 @@
 	}
 
 }
+
+.navigation .active {
+	color: #000;
+}
+
 .navigation__trigger {
 	background:#b81401;
 	height: 40px;
 	text-align: right;
 	vertical-align: middle;
 	padding: 10px ;
-	display: none;	
+	display: none;
+	display: none;
 }
 
 
@@ -61,6 +67,9 @@
 	line-height: 24px;
 	text-align: center;
 
-	&:hover {text-decoration: underline;}
+	&:hover {
+		text-decoration: underline;
+		color: #000;
+	}
 }
 
