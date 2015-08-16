@@ -568,17 +568,6 @@ p {
   padding: 0; }
 
 /*sticky footer*/
-.wrapper {
-  min-height: 100%; }
-
-.wrapper:after {
-  content: "";
-  display: block; }
-
-.wrapper:after,
-.page-footer {
-  height: 330px; }
-
 /*end of sticky footer*/
 .hide {
   position: absolute;
@@ -855,6 +844,9 @@ p {
     left: 50%;
     transform: translate(-50%, -50%); }
 
+.about {
+  margin-bottom: 150px; }
+
 .about__title {
   font-family: 'Myriad Pro';
   color: #3a3939;
@@ -1015,3 +1007,8 @@ input {
     width: 100%; }
   .navigation__link {
     text-align: left; } }
+
+@media (min-width: 767px) {
+  .navigation__list {
+    display: block !important;
+    width: 100%; } }

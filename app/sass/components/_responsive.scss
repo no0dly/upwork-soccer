@@ -1,5 +1,5 @@
 
-@media  (max-width: $screen-xs-max ){
+@media (max-width: $screen-xs-max){
  	body{
  		border-top: none;
  	}
@@ -20,7 +20,11 @@
 	.navigation__link{
 		text-align: left;
 	}
-
-	
 }
 
+@media (min-width: $screen-xs-max){
+	.navigation__list {
+ 		display: block!important;
+ 		width: 100%;
+ 	}
+}

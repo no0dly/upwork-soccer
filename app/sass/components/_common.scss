@@ -25,19 +25,19 @@ p {
 	padding: 0;
 }
 /*sticky footer*/
-.wrapper {
-	min-height: 100%;
-}
+// .wrapper {
+// 	min-height: 100%;
+// }
 
-.wrapper:after {
-	content: "";
-	display: block;
-}
+// .wrapper:after {
+// 	content: "";
+// 	display: block;
+// }
 
-.wrapper:after,
-.page-footer {
-	height: 330px;
-}
+// .wrapper:after,
+// .page-footer {
+// 	height: 330px;
+// }
 /*end of sticky footer*/
 
 .hide {
