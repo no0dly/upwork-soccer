@@ -1,13 +1,19 @@
 
 @media (max-width: $screen-xs-max){
- 	body{
- 		border-top: none;
+ 	.page-header {
+ 		padding-top: 0;
  	}
+
+
 	.navigation__trigger {
 		display: block;
 	}
  	.navigation{
  		float: none;
+
+		&:before {
+			display: none;
+		}	
  	}
  	.navigation__list {
  		display: none;
@@ -20,11 +26,26 @@
 	.navigation__link{
 		text-align: left;
 	}
+
+	.logo{
+		@include centerer (true, true);
+		opacity: 0.3;
+	}
+
+	.about__block{
+		padding-left:10px;
+	}
+
+	.team__link {	
+		border:5px solid #fff;	
+	}
+
 }
+
 
 @media (min-width: $screen-xs-max){
 	.navigation__list {
  		display: block!important;
- 		width: 100%;
+ 		// width: 100%;
  	}
 }

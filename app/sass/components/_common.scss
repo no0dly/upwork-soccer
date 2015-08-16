@@ -18,8 +18,8 @@
 
 body {
 	background:#e8e8e8 url('../images/pattern.png');
-	border-top:27px solid #b81401;
 }
+
 p {
 	margin: 0;
 	padding: 0;
@@ -57,7 +57,7 @@ p {
 	font-weight: 400;
 	letter-spacing: 0.39px;
 	text-align: center;
-	line-height: 72px;
+	// line-height: 72px;
 	margin: 0;
 	display: block;
 
@@ -66,34 +66,34 @@ p {
 		display: block;
 		width: 100%;
 		height: 2px;
+		margin: 15px 0;
 		border-top:1px solid rgba(200, 200, 200,0.9); 
 		background:#fcfafa;
 	}
 }
 
 .page-header {
+	padding-top: 27px;
 	margin-bottom: 76px;
-	.container{
-		position: relative;
-	}
 }
-.logo{
+
+.logo {
 	display: block;
 	@include clearfix;
 	position: relative;
 	float: left;
 }
+
 .logo__wrap {
 	width: 151px;
-	height: 161px;	
-		
+	height: 161px;
 }
 
 .logo__img {
-	width: 100%;	
+	width: 100%;
 }
 
-.logo__title {	
+.logo__title {
 	white-space: nowrap;
 	font-family: "OpenSans";
 	color:  #494848;

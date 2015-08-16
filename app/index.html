@@ -13,6 +13,7 @@
     <!-- build:css css/vendor.min.css -->
     <!-- bower:css-->
     <link rel="stylesheet" href="/bower/normalize.css/normalize.css">
+    <link rel="stylesheet" href="/bower/fancybox/source/jquery.fancybox.css">
     <!-- endbower-->
     <link rel="stylesheet" href="/bower/slider/jquery.bxSlider.css">
     <!-- endbuild -->
@@ -27,8 +28,8 @@
   <body>
     <div class="wrapper">
       <header class="page-header">
-        <div class="container">
-          <nav class="navigation">
+        <nav class="navigation">
+          <div class="container">
             <div class="navigation__trigger visible-sm"><img src="../images/menu.svg" alt="menu" class="navigation__img visible-sm"></div>
             <ul class="navigation__list">
               <li class="navigation__item"><a href="#tournament" class="navigation__link">tournament</a></li>
@@ -37,7 +38,9 @@
               <li class="navigation__item"><a href="#join" class="navigation__link">join</a></li>
               <li class="navigation__item"><a href="#about-us" class="navigation__link">about us</a></li>
             </ul>
-          </nav>
+          </div>
+        </nav>
+        <div class="container">
           <a href="" class="logo">
             <div class="logo__wrap"><img src="images/logo.png" alt="soccer logo" class="logo__img"></div>
           </a>
@@ -58,16 +61,17 @@
               <li><img src="images/slider-first.png" alt="second slide"></li>
               <li><img src="images/slider-first.png" alt="third slide"></li>
             </ul>
+            <div class="bxslider__shadow"><img src="../images/shadow.png" alt="" class="shadow__img"></div>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-5">
+          <div class="col-md-5 col-xs-6">
             <div class="content">
               <h2 class="content__title">Grandstand tournaments</h2>
               <p class="content__text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. <a href="#" class="content__more">/ ... /</a></p>
             </div>
           </div>
-          <div class="col-xs-5 col-xs-offset-2">
+          <div class="col-md-5 col-md-offset-2 col-xs-6">
             <div class="content">
               <h2 class="content__title">Grandstand tournaments</h2>
               <p class="content__text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. <a href="#" class="content__more">/ ... /</a></p>
@@ -92,30 +96,33 @@
         </div>
         <div class="row">
           <div class="team">
-            <div id="teams" class="team__title tracked">Out teams</div>
-            <div class="row">
-              <div class="col-xs-4">
+            <div id="teams" class="team__title tracked">Our teams</div>
+            <ul class="team__list row">
+              <li class="team__item col-sm-4 col-xs-12">
                 <a rel="group" href="images/image1.jpg" class="team__link fancybox"><img src="images/image1.jpg" alt="first team" class="team__img"></a>
+                <div class="shadow"><img src="../images/shadow.png" alt="" class="shadow__img"></div>
                 <div class="content">
                   <h2 class="content__title">Grandstand tournaments</h2>
                   <p class="content__text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</p>
                 </div>
-              </div>
-              <div class="col-xs-4">
+              </li>
+              <li class="team__item col-sm-4 col-xs-12">
                 <a rel="group" href="images/image2.jpg" class="team__link fancybox"><img src="images/image2.jpg" alt="second team" class="team__img"></a>
+                <div class="shadow"><img src="../images/shadow.png" alt="" class="shadow__img"></div>
                 <div class="content">
                   <h2 class="content__title">Grandstand tournaments</h2>
                   <p class="content__text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
                 </div>
-              </div>
-              <div class="col-xs-4">
+              </li>
+              <li class="team__item col-sm-4 col-xs-12">
                 <a rel="group" href="images/image3.jpg" class="team__link fancybox"><img src="images/image3.jpg" alt="third team" class="team__img"></a>
+                <div class="shadow"><img src="../images/shadow.png" alt="" class="shadow__img"></div>
                 <div class="content">
                   <h2 class="content__title">Grandstand tournaments</h2>
                   <p class="content__text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="row">
@@ -136,23 +143,18 @@
         <div class="row">
           <div class="about">
             <div class="container">
-              <div class="about__title">
-                <div class="row">
-                  <div class="col-xs-4">Contact Us</div>
-                  <div class="col-xs-4">Get Social</div>
-                  <div class="col-xs-4">Join Us</div>
-                </div>
-              </div>
               <div class="row">
-                <div id="about-us" class="col-xs-4 tracked">
-                  <dl class="contacts"><dt class="contacts__term">P:</dt>
+                <div id="about-us" class="about__block col-sm-4 col-xs-12 tracked">
+                  <div class="about__title">Contact Us</div>
+                  <dl class="contacts__list"><dt class="contacts__term">P:</dt>
                     <dd class="contacts__def">+48 12 000 000 000</dd><dt class="contacts__term">E:</dt>
                     <dd class="contacts__def">contact@GrandStand</dd><dt class="contacts__term">W:</dt>
                     <dd class="contacts__def">www.GrandStand.com</dd><dt class="contacts__term">A:</dt>
                     <dd class="contacts__def">Poland, Cracow, Zielona 10</dd>
                   </dl>
                 </div>
-                <div class="col-xs-4">
+                <div class="about__block col-sm-4 col-xs-12">
+                  <div class="about__title">Get Social</div>
                   <ul class="social__list">
                     <li class="social__item">
                       <a href="#" class="social__link"><img src="images/icon-tw.png" class="social__img"><span class="hide">twitter</span></a>
@@ -171,7 +173,8 @@
                     </li>
                   </ul>
                 </div>
-                <div class="col-xs-4">
+                <div class="about__block col-sm-4 col-xs-12">
+                  <div class="about__title">Contact Us</div>
                   <div id="join" class="join tracked">
                     <form action="" class="join__form">
                       <div class="input-group">
