@@ -10,8 +10,8 @@
 .bx-wrapper{ 
 	margin: 72px 0;
 }
-.bx-prev,
-.bx-next {
+.bx-wrapper .bx-prev,
+.bx-wrapper .bx-next {
 	
 	width: 32px;
 	height: 32px;
@@ -20,11 +20,11 @@
 /* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */
 
 }
-.bx-prev {
+.bx-wrapper .bx-prev {
 	left: -12px;
 	background:url('../images/bx-prev.png') no-repeat;
 }
-.bx-next{
+.bx-wrapper .bx-next{
 	right: -12px;
 	background:url('../images/bx-next.png') no-repeat;
 }
