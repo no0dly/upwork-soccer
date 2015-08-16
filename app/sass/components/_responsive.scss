@@ -1,7 +1,7 @@
 
 @media (max-width: $screen-xs-max){
  	.page-header {
- 		padding-top: 40px;
+ 		padding-top: 0;
  	}
 
 
@@ -13,7 +13,6 @@
 
 		&:before {
 			display: none;
-
 		}	
  	}
  	.navigation__list {
@@ -27,12 +26,27 @@
 	.navigation__link{
 		text-align: left;
 	}
+
+	.logo{
+		@include centerer (true, true);
+		opacity: 0.3;
+	}
+	.social__list,
+	.contacts__list,
+	.about__title{
+		padding-left: 10px;
+	}
+
+	.join{ margin-left: 10px; }
+
+
+
 }
 
 
 @media (min-width: $screen-xs-max){
-	// .navigation__list {
- // 		display: block!important;
- // 		width: 100%;
- // 	}
+	.navigation__list {
+ 		display: block!important;
+ 		// width: 100%;
+ 	}
 }

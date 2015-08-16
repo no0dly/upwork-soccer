@@ -1,12 +1,15 @@
 .about {
 	margin-bottom: 150px;
 }
-
+.about__block{
+	padding: 0;
+}
 .about__title{
 	font-family: 'Myriad Pro';
 	color:  #3a3939;
 	font-size: 0.875em;
 	font-weight: 700;
+	margin-top: 30px;
 	line-height: 36px;
 	text-align: left;
 
@@ -21,7 +24,7 @@
 }
 
 
-.contacts {
+.contacts__list {
 	font-family: 'Myriad Pro';
 	color: #383838;
 	font-size: 0.8125em;
