@@ -31,15 +31,14 @@
 		@include centerer (true, true);
 		opacity: 0.3;
 	}
-	.social__list,
-	.contacts__list,
-	.about__title{
-		padding-left: 10px;
+
+	.about__block{
+		padding-left:10px;
 	}
 
-	.join{ margin-left: 10px; }
-
-
+	.team__link {	
+		border:5px solid #fff;	
+	}
 
 }
 
