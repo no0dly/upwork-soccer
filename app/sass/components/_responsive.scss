@@ -1,0 +1,26 @@
+
+@media  (max-width: $screen-xs-max ){
+ 	body{
+ 		border-top: none;
+ 	}
+	.navigation__trigger {
+		display: block;
+	}
+ 	.navigation{
+ 		float: none;
+ 	}
+ 	.navigation__list {
+ 		display: none;
+ 		width: 100%;
+ 	}
+ 	.navigation__item{
+ 		display: block;
+ 		width: 100%;
+ 	}
+	.navigation__link{
+		text-align: left;
+	}
+
+	
+}
+

@@ -1,8 +1,24 @@
 .navigation {
 	margin-bottom: 45px;
+	float: right;
 	@include clearfix;
 }
+.navigation__trigger {
+	background:#b81401;
+	height: 40px;
+	text-align: right;
+	vertical-align: middle;
+	padding: 10px ;
+	display: none;
+	
+}
 
+
+.navigation__img{
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
 .navigation__list{
 	list-style: none;
 	padding:0 10px;
@@ -11,6 +27,7 @@
 	float: right;
 	background-color:  #b81401;
 	@include clearfix;
+
 }
 
 .navigation__item{

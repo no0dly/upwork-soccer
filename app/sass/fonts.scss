@@ -18,3 +18,14 @@
 	font-style: normal;
 	font-weight: 700;
 }
+
+/* font-family: "OpenSansBoldItalic"; */
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot");
+    src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.woff") format("woff"),
+    url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 600;
+}

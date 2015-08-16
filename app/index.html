@@ -13,9 +13,9 @@
     <!-- build:css css/vendor.min.css -->
     <!-- bower:css-->
     <link rel="stylesheet" href="/bower/normalize.css/normalize.css">
+    <link rel="stylesheet" href="/bower/fancybox/source/jquery.fancybox.css">
     <!-- endbower-->
     <link rel="stylesheet" href="/bower/slider/jquery.bxSlider.css">
-    <link rel="stylesheet" href="/bower/fancybox/source/jquery.fancybox.css">
     <!-- endbuild -->
     <!-- build:css css/main.min.css -->
     <link rel="stylesheet" href="css/main.css">
@@ -29,31 +29,28 @@
     <div class="wrapper">
       <header class="page-header">
         <div class="container">
-          <div class="row">
-            <div class="col-xs-5">
-              <div class="logo"><img src="images/logo.png" alt="soccer logo" class="logo__img"><span class="hide">soccer website</span></div>
-              <div class="logo-title">2016 Grandstand Soccer Invitational</div>
-            </div>
-            <div class="col-xs-7">
-              <nav class="navigation">
-                <ul class="navigation__list">
-                  <li class="navigation__item"><a href="#" class="navigation__link">tournament</a></li>
-                  <li class="navigation__item"><a href="#" class="navigation__link">teams</a></li>
-                  <li class="navigation__item"><a href="#" class="navigation__link">sponsors</a></li>
-                  <li class="navigation__item"><a href="#" class="navigation__link">join</a></li>
-                  <li class="navigation__item"><a href="#" class="navigation__link">about us</a></li>
-                </ul>
-              </nav>
-              <div class="search">
-                <div action="" class="search__form">
-                  <div class="search__input">
-                    <input type="search" name="search" placeholder="Search" class="search__field">
-                    <input type="submit" value="" class="search__btn">
-                  </div>
-                </div>
+          <nav class="navigation">
+            <div class="navigation__trigger visible-sm"><img src="../images/menu.svg" alt="menu" class="navigation__img visible-sm"></div>
+            <ul class="navigation__list">
+              <li class="navigation__item"><a href="#" class="navigation__link">tournament</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">teams</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">sponsors</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">join</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">about us</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <div action="" class="search__form">
+              <div class="search__input">
+                <input type="search" name="search" placeholder="Search" class="search__field">
+                <input type="submit" value="" class="search__btn">
               </div>
             </div>
           </div>
+          <a href="" class="logo">
+            <div class="logo__wrap"><img src="images/logo.png" alt="soccer logo" class="logo__img"></div>
+            <div class="logo__title">2016 Grandstand Soccer Invitational</div>
+          </a>
         </div>
       </header>
       <div class="container">
@@ -90,9 +87,9 @@
         <div class="row">
           <div class="zap-feature">
             <div class="row">
+              <h2 class="zap-feature__title">Tournament</h2>
               <div class="col-md-9 col-sm-12">
-                <h2 class="zap-feature__title">Hey,Welcome to your <span> Awesome </span> web Tournament.
-Tell your readers about the latest news</h2>
+                <div class="zap-feature__slogan">Hey,Welcome to your <span> Awesome </span> web Tournament. Tell your readers about the latest news</div>
                 <div class="zap-feature__video">
                   <iframe width="100%" height="300" src="https://www.youtube.com/embed/N2tlQSnWxCE" frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -144,6 +141,10 @@ Tell your readers about the latest news</h2>
             </ul>
           </div>
         </div>
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="container">
         <div class="row">
           <div class="about">
             <div class="container">
@@ -201,10 +202,6 @@ Tell your readers about the latest news</h2>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <footer class="page-footer">
-      <div class="container">
         <div class="row">
           <div class="page-footer__wrap">
             <div class="col-xs-6">

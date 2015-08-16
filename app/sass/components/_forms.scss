@@ -1,15 +1,19 @@
 input {
 	outline: none;
 }
-
+.search {
+	position: absolute;
+	right: 80px;
+	bottom: 0;
+}
 .search__input {
 	text-align: right;
 	height: 30px;
 	position: relative;
-	box-sizing: border-box;
-	input {
-		box-sizing: border-box;
-	}
+	// box-sizing: border-box;
+	// input {
+	// 	box-sizing: border-box;
+	// }
 }
 
 .search__field,

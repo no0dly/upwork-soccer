@@ -15,6 +15,14 @@
   font-style: normal;
   font-weight: 700; }
 
+/* font-family: "OpenSansBoldItalic"; */
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot");
+  src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.woff") format("woff"), url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 600; }
+
 /* --------- mixins --------- */
 /* --------- components --------- */
 .container {
@@ -569,14 +577,14 @@ p {
 
 .wrapper:after,
 .page-footer {
-  height: 80px; }
+  height: 330px; }
 
 /*end of sticky footer*/
 .hide {
   position: absolute;
   left: -9999px; }
 
-.title, .motto__title, .team__title, .sponsors__title {
+.title, .motto__title, .team__title, .zap-feature__title, .sponsors__title {
   font-family: 'Myriad Pro';
   color: #323232;
   font-size: 30px;
@@ -586,7 +594,7 @@ p {
   line-height: 72px;
   margin: 0;
   display: block; }
-  .title:before, .motto__title:before, .team__title:before, .sponsors__title:before, .title:after, .motto__title:after, .team__title:after, .sponsors__title:after {
+  .title:before, .motto__title:before, .team__title:before, .zap-feature__title:before, .sponsors__title:before, .title:after, .motto__title:after, .team__title:after, .zap-feature__title:after, .sponsors__title:after {
     content: '';
     display: block;
     width: 100%;
@@ -596,21 +604,39 @@ p {
 
 .page-header {
   margin-bottom: 76px; }
+  .page-header .container {
+    position: relative; }
 
 .logo {
+  display: block;
+  position: relative;
+  float: left; }
+  .logo:before,
+  .logo:after {
+    content: " ";
+    display: table; }
+  .logo:after {
+    clear: both; }
+
+.logo__wrap {
   width: 151px;
   height: 161px; }
 
 .logo__img {
   width: 100%; }
 
-.logo-title {
+.logo__title {
+  white-space: nowrap;
+  font-family: "OpenSans";
+  color: #494848;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+  text-align: left;
+  left: 130px;
   position: absolute;
-  top: 75px;
-  left: 170px;
-  font-size: 0.875em;
-  font-family: openSans;
-  font-style: italic; }
+  top: 50%;
+  transform: translate(0, -50); }
 
 .motto__title {
   margin-bottom: 20px; }
@@ -643,6 +669,15 @@ p {
   color: #383838;
   text-decoration: none; }
 
+.page-footer {
+  background: #e8e8e8; }
+  .page-footer:before,
+  .page-footer:after {
+    content: " ";
+    display: table; }
+  .page-footer:after {
+    clear: both; }
+
 .page-footer__wrap {
   border-radius: 10px 10px 0 0;
   border: 2px solid  #000000;
@@ -667,13 +702,27 @@ p {
   line-height: 20px; }
 
 .navigation {
-  margin-bottom: 45px; }
+  margin-bottom: 45px;
+  float: right; }
   .navigation:before,
   .navigation:after {
     content: " ";
     display: table; }
   .navigation:after {
     clear: both; }
+
+.navigation__trigger {
+  background: #b81401;
+  height: 40px;
+  text-align: right;
+  vertical-align: middle;
+  padding: 10px;
+  display: none; }
+
+.navigation__img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer; }
 
 .navigation__list {
   list-style: none;
@@ -771,15 +820,20 @@ p {
     text-decoration: underline; }
 
 .zap-feature__title {
+  text-transform: uppercase;
+  margin-bottom: 30px; }
+
+.zap-feature__slogan {
   margin: 0 0 30px;
-  padding: 0;
+  padding: 0 3px 0 0;
   font-family: 'Myriad Pro';
   color: #494949;
   font-size: 2.114em;
   font-weight: 400;
   letter-spacing: 0.44px;
-  text-align: right; }
-  .zap-feature__title span {
+  text-align: right;
+  border-right: 5px solid rgba(156, 156, 156, 0.2); }
+  .zap-feature__slogan span {
     font-weight: 700; }
 
 .sponsors {
@@ -858,13 +912,15 @@ p {
 input {
   outline: none; }
 
+.search {
+  position: absolute;
+  right: 80px;
+  bottom: 0; }
+
 .search__input {
   text-align: right;
   height: 30px;
-  position: relative;
-  box-sizing: border-box; }
-  .search__input input {
-    box-sizing: border-box; }
+  position: relative; }
 
 .search__field,
 .search__btn {
@@ -943,3 +999,19 @@ input {
 
 .team .content__title {
   margin-bottom: 20px; }
+
+@media (max-width: 767px) {
+  body {
+    border-top: none; }
+  .navigation__trigger {
+    display: block; }
+  .navigation {
+    float: none; }
+  .navigation__list {
+    display: none;
+    width: 100%; }
+  .navigation__item {
+    display: block;
+    width: 100%; }
+  .navigation__link {
+    text-align: left; } }

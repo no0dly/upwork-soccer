@@ -1,21 +1,20 @@
 header.page-header
 	.container
-		.row
-			.col-xs-5
-				.logo
-					img.logo__img(src="images/logo.png" alt="soccer logo")
-					span.hide soccer website
-				.logo-title 2016 Grandstand Soccer Invitational
+		nav.navigation
+			.navigation__trigger.visible-sm
+				img(src="../images/menu.svg", alt="menu").navigation__img.visible-sm
 
-			.col-xs-7
-				nav.navigation
-					ul.navigation__list
-						each item in ['tournament', 'teams', 'sponsors', 'join', 'about us']
-							li.navigation__item
-								a.navigation__link(href="#")= item
-				.search
-					.search__form(action="")
-						.search__input
-							input.search__field(type="search" name="search" placeholder="Search")
-							input.search__btn(type="submit" value="")
+			ul.navigation__list
+				each item in ['tournament', 'teams', 'sponsors', 'join', 'about us']
+					li.navigation__item
+						a.navigation__link(href="#")= item
+		.search
+			.search__form(action="")
+				.search__input
+					input.search__field(type="search" name="search" placeholder="Search")
+					input.search__btn(type="submit" value="")
+		a(href="").logo
+			.logo__wrap
+				img.logo__img(src="images/logo.png" alt="soccer logo")
+			.logo__title 2016 Grandstand Soccer Invitational
 
