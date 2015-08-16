@@ -1,10 +1,9 @@
 .about(id="about-us").tracked
 	.container
 		.row
-			.about__block.col-sm-4.col-xs-12
+			.about__block.col-sm-4.col-xs-12(id="about-us").tracked
 				.about__title Contact Us
-
-				dl.contacts
+				dl.contacts__list
 					dt.contacts__term P:
 					dd.contacts__def +48 12 000 000 000
 					dt.contacts__term E:
@@ -40,11 +39,7 @@
 
 			.about__block.col-sm-4.col-xs-12
 				.about__title Contact Us
-				.join
-
-			.col-xs-4
 				.join(id="join").tracked
-
 					form.join__form(action="")
 						.input-group
 							input.input-text(type="text" placeholder="text")

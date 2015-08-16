@@ -17,7 +17,7 @@
 // } fancy or sticky footer
 
 body {
-	background:#e8e8e8 url('../images/pattern.png');	
+	background:#e8e8e8 url('../images/pattern.png');
 }
 
 p {
@@ -56,7 +56,7 @@ p {
 	font-size: 30px;
 	font-weight: 400;
 	letter-spacing: 0.39px;
-	text-align: center;	
+	text-align: center;
 	// line-height: 72px;
 	margin: 0;
 	display: block;
@@ -74,7 +74,7 @@ p {
 
 .page-header {
 	padding-top: 27px;
-	margin-bottom: 76px;	
+	margin-bottom: 76px;
 }
 
 .logo {
@@ -86,15 +86,14 @@ p {
 
 .logo__wrap {
 	width: 151px;
-	height: 161px;	
-		
+	height: 161px;
 }
 
 .logo__img {
-	width: 100%;	
+	width: 100%;
 }
 
-.logo__title {	
+.logo__title {
 	white-space: nowrap;
 	font-family: "OpenSans";
 	color:  #494848;
