@@ -753,7 +753,8 @@ p {
     color: #000; }
 
 .bxslider {
-  padding-left: 0; }
+  padding: 0;
+  margin: 0; }
 
 .bxslider img {
   width: 100%; }
@@ -768,12 +769,14 @@ p {
   /* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */ }
 
 .bx-wrapper .bx-prev {
-  left: -12px;
+  left: -6px;
   background: url("../images/bx-prev.png") no-repeat; }
 
 .bx-wrapper .bx-next {
-  right: -12px;
+  right: -0;
   background: url("../images/bx-next.png") no-repeat; }
+  .bx-wrapper .bx-next:hover {
+    background: url("../images/bx-next.png") no-repeat; }
 
 .bx-prev,
 .bx-next {
@@ -1034,7 +1037,8 @@ input {
 
 @media (max-width: 767px) {
   .page-header {
-    padding-top: 0; }
+    padding-top: 0;
+    text-align: center; }
   .navigation__trigger {
     display: block; }
   .navigation {
@@ -1050,11 +1054,9 @@ input {
   .navigation__link {
     text-align: left; }
   .logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.3; }
+    float: none;
+    display: inline-block;
+    margin-top: 40px; }
   .about__block {
     padding-left: 10px; }
   .team__link {

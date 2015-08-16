@@ -1,6 +1,7 @@
 
 .bxslider{
-	padding-left: 0;	
+	padding: 0;
+	margin: 0;
 }
 
 .bxslider img {
@@ -23,12 +24,15 @@
 
 }
 .bx-wrapper .bx-prev {
-	left: -12px;
+	left: -6px;
 	background:url('../images/bx-prev.png') no-repeat;
 }
 .bx-wrapper .bx-next{
-	right: -12px;
+	right: -0;
 	background:url('../images/bx-next.png') no-repeat;
+	&:hover {
+		background:url('../images/bx-next.png') no-repeat;
+	}
 }
 
 .bx-prev,
