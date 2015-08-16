@@ -13,7 +13,6 @@
     <!-- build:css css/vendor.min.css -->
     <!-- bower:css-->
     <link rel="stylesheet" href="/bower/normalize.css/normalize.css">
-    <link rel="stylesheet" href="/bower/fancybox/source/jquery.fancybox.css">
     <!-- endbower-->
     <link rel="stylesheet" href="/bower/slider/jquery.bxSlider.css">
     <!-- endbuild -->
@@ -32,11 +31,11 @@
           <nav class="navigation">
             <div class="navigation__trigger visible-sm"><img src="../images/menu.svg" alt="menu" class="navigation__img visible-sm"></div>
             <ul class="navigation__list">
-              <li class="navigation__item"><a href="#" class="navigation__link">tournament</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link">teams</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link">sponsors</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link">join</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link">about us</a></li>
+              <li class="navigation__item"><a href="#tournament" class="navigation__link">tournament</a></li>
+              <li class="navigation__item"><a href="#teams" class="navigation__link">teams</a></li>
+              <li class="navigation__item"><a href="#sponsors" class="navigation__link">sponsors</a></li>
+              <li class="navigation__item"><a href="#join" class="navigation__link">join</a></li>
+              <li class="navigation__item"><a href="#about-us" class="navigation__link">about us</a></li>
             </ul>
           </nav>
           <a href="" class="logo">
@@ -78,12 +77,10 @@
         <div class="row">
           <div class="zap-feature">
             <div class="row">
-              <h2 class="zap-feature__title">Tournament</h2>
+              <h2 id="tournament" class="zap-feature__title tracked">Tournament</h2>
               <div class="col-md-9 col-sm-12">
                 <div class="zap-feature__slogan">Hey,Welcome to your <span> Awesome </span> web Tournament. Tell your readers about the latest news</div>
-                <div class="zap-feature__video">
-                  <iframe width="100%" height="300" src="https://www.youtube.com/embed/N2tlQSnWxCE" frameborder="0" allowfullscreen></iframe>
-                </div>
+                <div class="zap-feature__video"></div>
               </div>
               <div class="col-md-3 col-sm-12">
                 <p class="zap-feature__text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
@@ -95,7 +92,7 @@
         </div>
         <div class="row">
           <div class="team">
-            <div class="team__title">Out teams</div>
+            <div id="teams" class="team__title tracked">Out teams</div>
             <div class="row">
               <div class="col-xs-4">
                 <a rel="group" href="images/image1.jpg" class="team__link fancybox"><img src="images/image1.jpg" alt="first team" class="team__img"></a>
@@ -123,7 +120,7 @@
         </div>
         <div class="row">
           <div class="sponsors">
-            <h2 class="sponsors__title">sponsors</h2>
+            <h2 id="sponsors" class="sponsors__title tracked">sponsors</h2>
             <ul class="sponsors__list row">
               <li class="sponsors__item col-xs-6 col-md-3"><img src="../images/icon-legion.png" alt=""></li>
               <li class="sponsors__item col-xs-6 col-md-3"><img src="../images/icon-volcom.png" alt=""></li>
@@ -147,12 +144,12 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-xs-4">
+                <div id="about-us" class="col-xs-4 tracked">
                   <dl class="contacts"><dt class="contacts__term">P:</dt>
                     <dd class="contacts__def">+48 12 000 000 000</dd><dt class="contacts__term">E:</dt>
                     <dd class="contacts__def">contact@GrandStand</dd><dt class="contacts__term">W:</dt>
                     <dd class="contacts__def">www.GrandStand.com</dd><dt class="contacts__term">A:</dt>
-                    <dd class="contacts__def">Poland, Cracow, Zielona 10 </dd>
+                    <dd class="contacts__def">Poland, Cracow, Zielona 10</dd>
                   </dl>
                 </div>
                 <div class="col-xs-4">
@@ -175,7 +172,7 @@
                   </ul>
                 </div>
                 <div class="col-xs-4">
-                  <div class="join">
+                  <div id="join" class="join tracked">
                     <form action="" class="join__form">
                       <div class="input-group">
                         <input type="text" placeholder="text" class="input-text">
@@ -212,6 +209,7 @@
     <script src="/bower/jquery/jquery.js"></script>
     <script src="/bower/slider/jquery.bxSlider.js"></script>
     <script src="/bower/fancybox/source/jquery.fancybox.pack.js"></script>
+    <script src="/bower/waypoints/lib/jquery.waypoints.js"></script>
     <!--endbower-->
     <!-- endbuild -->
     <!-- build:js js/main.js -->
