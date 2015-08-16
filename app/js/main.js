@@ -8,7 +8,10 @@
 
 
 $(document).ready(function(){
-  $('.bxslider').bxSlider({
-  	
-  });
+	$('.bxslider').bxSlider({
+		// auto: true,
+		pager: true
+	});
+
+	$(".fancybox").fancybox();
 });

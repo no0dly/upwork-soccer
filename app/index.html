@@ -13,8 +13,9 @@
     <!-- build:css css/vendor.min.css -->
     <!-- bower:css-->
     <link rel="stylesheet" href="/bower/normalize.css/normalize.css">
-    <link rel="stylesheet" href="/bower/bxslider/bx_styles/bx_styles.css">
-    <!-- endbower -->
+    <!-- endbower-->
+    <link rel="stylesheet" href="/bower/slider/jquery.bxSlider.css">
+    <link rel="stylesheet" href="/bower/fancybox/source/jquery.fancybox.css">
     <!-- endbuild -->
     <!-- build:css css/main.min.css -->
     <link rel="stylesheet" href="css/main.css">
@@ -29,10 +30,11 @@
       <header class="page-header">
         <div class="container">
           <div class="row">
-            <div class="col-xs-4">
+            <div class="col-xs-5">
               <div class="logo"><img src="images/logo.png" alt="soccer logo" class="logo__img"><span class="hide">soccer website</span></div>
+              <div class="logo-title">2016 Grandstand Soccer Invitational</div>
             </div>
-            <div class="col-xs-8">
+            <div class="col-xs-7">
               <nav class="navigation">
                 <ul class="navigation__list">
                   <li class="navigation__item"><a href="#" class="navigation__link">tournament</a></li>
@@ -42,6 +44,14 @@
                   <li class="navigation__item"><a href="#" class="navigation__link">about us</a></li>
                 </ul>
               </nav>
+              <div class="search">
+                <div action="" class="search__form">
+                  <div class="search__input">
+                    <input type="search" name="search" placeholder="Search" class="search__field">
+                    <input type="submit" value="" class="search__btn">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -80,13 +90,14 @@
         <div class="row">
           <div class="zap-feature">
             <div class="row">
-              <div class="col-xs-9">
-                <h2 class="zap-feature__title"> 
-Hey,Welcome to your <span> Awesome </span> web Tournament.
+              <div class="col-md-9 col-sm-12">
+                <h2 class="zap-feature__title">Hey,Welcome to your <span> Awesome </span> web Tournament.
 Tell your readers about the latest news</h2>
-                <div class="zap-feature__video"></div>
+                <div class="zap-feature__video">
+                  <iframe width="100%" height="300" src="https://www.youtube.com/embed/N2tlQSnWxCE" frameborder="0" allowfullscreen></iframe>
+                </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-md-3 col-sm-12">
                 <p class="zap-feature__text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
                   velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. </p>
                 <p class="zap-feature__text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
@@ -96,21 +107,24 @@ Tell your readers about the latest news</h2>
         </div>
         <div class="row">
           <div class="team">
-            <div class="team__title">Out team</div>
+            <div class="team__title">Out teams</div>
             <div class="row">
-              <div class="col-xs-4"><img src="" alt="">
+              <div class="col-xs-4">
+                <a rel="group" href="images/image1.jpg" class="team__link fancybox"><img src="images/image1.jpg" alt="first team" class="team__img"></a>
                 <div class="content">
                   <h2 class="content__title">Grandstand tournaments</h2>
                   <p class="content__text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</p>
                 </div>
               </div>
-              <div class="col-xs-4"><img src="" alt="">
+              <div class="col-xs-4">
+                <a rel="group" href="images/image2.jpg" class="team__link fancybox"><img src="images/image2.jpg" alt="second team" class="team__img"></a>
                 <div class="content">
                   <h2 class="content__title">Grandstand tournaments</h2>
                   <p class="content__text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
                 </div>
               </div>
-              <div class="col-xs-4"><img src="" alt="">
+              <div class="col-xs-4">
+                <a rel="group" href="images/image3.jpg" class="team__link fancybox"><img src="images/image3.jpg" alt="third team" class="team__img"></a>
                 <div class="content">
                   <h2 class="content__title">Grandstand tournaments</h2>
                   <p class="content__text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
@@ -123,10 +137,10 @@ Tell your readers about the latest news</h2>
           <div class="sponsors">
             <h2 class="sponsors__title">sponsors</h2>
             <ul class="sponsors__list row">
-              <li class="sponsors__item col-xs-3"><img src="../images/icon-legion.png" alt=""></li>
-              <li class="sponsors__item col-xs-3"><img src="../images/icon-volcom.png" alt=""></li>
-              <li class="sponsors__item col-xs-3"><img src="../images/icon-car.png" alt=""></li>
-              <li class="sponsors__item col-xs-3"><img src="../images/icon-jart.png" alt=""></li>
+              <li class="sponsors__item col-xs-6 col-md-3"><img src="../images/icon-legion.png" alt=""></li>
+              <li class="sponsors__item col-xs-6 col-md-3"><img src="../images/icon-volcom.png" alt=""></li>
+              <li class="sponsors__item col-xs-6 col-md-3"><img src="../images/icon-car.png" alt=""></li>
+              <li class="sponsors__item col-xs-6 col-md-3"><img src="../images/icon-jart.png" alt=""></li>
             </ul>
           </div>
         </div>
@@ -150,22 +164,38 @@ Tell your readers about the latest news</h2>
                   </dl>
                 </div>
                 <div class="col-xs-4">
-                  <ul class="Social">
-                    <li><a href=""><span>twitter</span></a></li>
-                    <li><a href=""><span>facebook</span></a></li>
-                    <li><a href=""><span>google</span></a></li>
-                    <li><a href=""><span>bbb</span></a></li>
-                    <li><a href=""><span>nnn</span></a></li>
+                  <ul class="social__list">
+                    <li class="social__item">
+                      <a href="#" class="social__link"><img src="images/icon-tw.png" class="social__img"><span class="hide">twitter</span></a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link"><img src="images/icon-fb.png" class="social__img"><span class="hide">facebook</span></a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link"><img src="images/icon-goo.png" class="social__img"><span class="hide">google</span></a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link"><img src="images/icon-ball.png" class="social__img"><span class="hide">bbb</span></a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link"><img src="images/icon-flik.png" class="social__img"><span class="hide">nnn</span></a>
+                    </li>
                   </ul>
                 </div>
                 <div class="col-xs-4">
-                  <form action="" class="join">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <input type="submit" value="join us">
-                  </form>
+                  <div class="join">
+                    <form action="" class="join__form">
+                      <div class="input-group">
+                        <input type="text" placeholder="text" class="input-text">
+                        <input type="text" placeholder="text" class="input-text">
+                        <input type="text" placeholder="text" class="input-text">
+                        <input type="text" placeholder="text" class="input-text">
+                      </div>
+                      <div class="submit">
+                        <input type="submit" value="join us" class="submit__buttom">
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -192,7 +222,8 @@ Tell your readers about the latest news</h2>
     <!-- build:js js/vendor.js -->
     <!--bower:js-->
     <script src="/bower/jquery/jquery.js"></script>
-    <script src="/bower/bxslider/jquery.bxSlider.min.js"></script>
+    <script src="/bower/slider/jquery.bxSlider.js"></script>
+    <script src="/bower/fancybox/source/jquery.fancybox.pack.js"></script>
     <!--endbower-->
     <!-- endbuild -->
     <!-- build:js js/main.js -->
