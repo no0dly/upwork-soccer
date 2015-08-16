@@ -1,6 +1,6 @@
 header.page-header
-	.container
-		nav.navigation
+	nav.navigation
+		.container
 			.navigation__trigger.visible-sm
 				img(src="../images/menu.svg", alt="menu").navigation__img.visible-sm
 
@@ -8,6 +8,8 @@ header.page-header
 				each item in ['tournament', 'teams', 'sponsors', 'join', 'about us']
 					li.navigation__item
 						a.navigation__link(href="#")= item
+	.container
+		
 		a(href="").logo
 			.logo__wrap
 				img.logo__img(src="images/logo.png" alt="soccer logo")

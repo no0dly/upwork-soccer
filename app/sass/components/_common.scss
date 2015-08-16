@@ -17,9 +17,9 @@
 // } fancy or sticky footer
 
 body {
-	background:#e8e8e8 url('../images/pattern.png');
-	border-top:27px solid #b81401;
+	background:#e8e8e8 url('../images/pattern.png');	
 }
+
 p {
 	margin: 0;
 	padding: 0;
@@ -67,17 +67,17 @@ p {
 }
 
 .page-header {
-	margin-bottom: 76px;
-	.container{
-		position: relative;
-	}
+	padding-top: 27px;
+	margin-bottom: 76px;	
 }
+
 .logo{
 	display: block;
 	@include clearfix;
 	position: relative;
 	float: left;
 }
+
 .logo__wrap {
 	width: 151px;
 	height: 161px;	

@@ -1,7 +1,22 @@
 .navigation {
-	margin-bottom: 45px;
-	float: right;
-	@include clearfix;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index:99999;
+
+	&:before {
+		content: '';
+		display: block;
+		background:#b81401;
+		height: 27px;
+
+	}
+
+	.container {
+		padding: 0;
+	}
+
 }
 .navigation__trigger {
 	background:#b81401;
@@ -48,3 +63,4 @@
 
 	&:hover {text-decoration: underline;}
 }
+
