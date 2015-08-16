@@ -1,3 +1,13 @@
+.team__list {
+	padding-left: 0;
+	list-style: none;
+}
+.team__item {
+	.content ,
+	.content__title  {
+		margin-bottom: 20px;
+	}
+}
 .team__img {
 	width: 100%;
 }
@@ -9,7 +19,6 @@
 .team__link {
 	position: relative;
 	display: block;
-	// margin-bottom: 38px;
 	border:10px solid #fff;
 	font-size: 0;
 
@@ -18,8 +27,7 @@
 		content: '';
 		width: 30px;
 		height: 30px;
-		background: url('../images/icon-plus.png');
-	
+		background: url('../images/icon-plus.png');	
 	}
 
 }
@@ -28,6 +36,3 @@
 	height: 100%;
 }
 
-.team .content__title  {
-	margin-bottom: 20px;
-}

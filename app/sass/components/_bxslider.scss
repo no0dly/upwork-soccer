@@ -44,6 +44,8 @@
 	width: 16px;
 	height: 16px;
 	display: inline-block;
+	position: relative;
+	z-index: 99;
 
 	&:hover {
 		background: url('../images/radio-selected.png') no-repeat;
@@ -52,10 +54,10 @@
 	&.active {
 		background: url('../images/radio-selected.png') no-repeat;
 	}
-
 }
 
 .bxslider__shadow {
 	position: relative;
 	bottom: 72px;
+	z-index: 0;
 }
