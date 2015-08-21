@@ -105,6 +105,9 @@
 }
 .navigation__lang {
 	text-align: right;
+	padding: 15px 0 0;
+	width: 62%;
+	float: left;
 }
 
 .navigation__lang_item,
@@ -127,9 +130,12 @@
 	padding-left: 2px;
 }
 
-.navigation__lang {
-	padding: 15px 0 0;
-	width: 62%;
+.navigation__social_link {
+	opacity: 0.5;
+	&:hover {
+		transition: 0.3s;
+		opacity: 1;
+	}
 }
 
 .navigation__lang_item {

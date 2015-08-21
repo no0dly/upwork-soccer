@@ -109,3 +109,39 @@ p {
 	font-weight: 400;
 	line-height: 20px;
 }
+
+// content
+
+.content__title {
+	text-align: center;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+
+.content__title_text {
+	font-size: 2.875em;
+	font-family: 'roboto_slabregular';
+	font-weight: 100;
+	text-align: center;
+	color: #1b3349;
+	position: relative;
+	display: inline-block;
+	padding: 0 70px;
+
+	&:before, &:after {
+		content: '';
+		display: block;
+		height: 1px;
+		background: #b81401;
+		width: 2000px;
+		position: absolute;
+		top: 50%;
+		margin-top: -1px;
+	}
+	&:before {
+		left: 100%;
+	}
+	&:after {
+		right: 100%;
+	}
+}

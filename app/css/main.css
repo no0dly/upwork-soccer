@@ -661,6 +661,34 @@ p {
   font-weight: 400;
   line-height: 20px; }
 
+.content__title {
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 50px; }
+
+.content__title_text {
+  font-size: 2.875em;
+  font-family: 'roboto_slabregular';
+  font-weight: 100;
+  text-align: center;
+  color: #1b3349;
+  position: relative;
+  display: inline-block;
+  padding: 0 70px; }
+  .content__title_text:before, .content__title_text:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #b81401;
+    width: 2000px;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px; }
+  .content__title_text:before {
+    left: 100%; }
+  .content__title_text:after {
+    right: 100%; }
+
 .top-navigation:before {
   content: '';
   display: block;
@@ -693,7 +721,10 @@ p {
   list-style: none; }
 
 .navigation__lang {
-  text-align: right; }
+  text-align: right;
+  padding: 15px 0 0;
+  width: 62%;
+  float: left; }
 
 .navigation__lang_item,
 .navigation__social_item,
@@ -712,9 +743,11 @@ p {
 .navigation__social_item:not(:first-child) {
   padding-left: 2px; }
 
-.navigation__lang {
-  padding: 15px 0 0;
-  width: 62%; }
+.navigation__social_link {
+  opacity: 0.5; }
+  .navigation__social_link:hover {
+    transition: 0.3s;
+    opacity: 1; }
 
 .navigation__lang_item {
   padding-left: 10px; }
@@ -782,6 +815,11 @@ p {
   .bx-wrapper .bx-next:hover {
     background: url("../images/bx-next.png") no-repeat; }
 
+.bx-wrapper .bx-viewport {
+  box-shadow: none;
+  background: none;
+  border-color: transparent; }
+
 .bx-prev,
 .bx-next {
   top: 50%;
@@ -809,25 +847,12 @@ p {
   z-index: 0; }
 
 .location {
-  font-family: 'Myriad Pro';
-  color: #383838;
-  font-weight: 400;
-  font-size: 0.8125em;
-  line-height: 20px;
-  text-align: left;
-  letter-spacing: 0.234px;
-  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
-  margin-bottom: 240px; }
+  border-radius: 10px;
+  background: #d5d5d5;
+  padding: 30px; }
 
 .location__title {
-  text-transform: uppercase;
-  font-size: 1.125em;
-  padding: 0;
-  margin: 0 0 30px; }
-
-.location__more {
-  color: #383838;
-  text-decoration: none; }
+  text-transform: uppercase; }
 
 .grandstand {
   margin-bottom: 230px; }

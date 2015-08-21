@@ -8,25 +8,25 @@ header.page-header
 							span.hide Grandstand Soccer
 					
 					.col-xs-9
-							nav.navigation
-								ul.navigation__lang.col-xs-7
-									li.navigation__lang_item
-										a.navigation__lang_link(href="#")
-											img.navigation__lang_img(src="/images/icon-flag-u.png" alt="en")
-											span.hide en
-									li.navigation__lang_item
-										a.navigation__lang_link(href="#")
-											img.navigation__lang_img(src="/images/icon-flag-sp.png" alt="sp")
-											span.hide sp
-								ul.navigation__social_list.col-xs-5
-									each soc in ['tw', 'fb', 'ins', 'ghost', 'v', 'in']
-										li.navigation__social_item
-											a.navigation__social_link(href='#' class='navigation__social_link-' + soc)
-												img.navigation__social_img(src="/images/icon-" + soc + '.png' alt= soc)
-												span.hide= soc
-							ul.navigation__list
-								each item in ['location', 'grandstand', 'teams', 'sponsors', 'contacts']
-									li.navigation__item
-										a.navigation__link(href="#" + item)= item
+						nav.navigation
+							ul.navigation__lang
+								li.navigation__lang_item
+									a.navigation__lang_link(href="#")
+										img.navigation__lang_img(src="/images/icon-flag-u.png" alt="en")
+										span.hide en
+								li.navigation__lang_item
+									a.navigation__lang_link(href="#")
+										img.navigation__lang_img(src="/images/icon-flag-sp.png" alt="sp")
+										span.hide sp
+							ul.navigation__social_list
+								each soc in ['tw', 'fb', 'ins', 'ghost', 'v', 'in']
+									li.navigation__social_item
+										a.navigation__social_link(href='#' class='navigation__social_link-' + soc)
+											img.navigation__social_img(src="/images/icon-" + soc + '.png' alt= soc)
+											span.hide= soc
+						ul.navigation__list
+							each item in ['location', 'grandstand', 'teams', 'sponsors', 'contacts']
+								li.navigation__item
+									a.navigation__link(href="#" + item)= item
 
 
