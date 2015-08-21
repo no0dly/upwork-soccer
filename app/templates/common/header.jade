@@ -1,22 +1,29 @@
 header.page-header
-	nav.navigation
 		.container
-			.navigation__trigger.visible-sm
-				img(src="../images/menu.svg", alt="menu").navigation__img.visible-sm
+			a(href="").logo
+				.logo__wrap
+					img.logo__img(src="images/logo.png" alt="soccer logo")
+			
+			nav.navigation
+				ul.navigation__lang
+					li.navigation__lang_item
+						a.navigation__lang_link(href="#")
+							img.navigation__lang_img(src="/images/icon-flag-u.png" alt="en")
+							span.hide en
+					li.navigation__lang_item
+						a.navigation__lang_link(href="#")
+							img.navigation__lang_img(src="/images/icon-flag-sp.png" alt="sp")
+							span.hide sp
+				ul.navigation__social_list
+					each soc in ['tw', 'fb', 'ins', 'ghost', 'v', 'in']
+						li.navigation__social_item
+							a.navigation__social_link(href='#' class='navigation__social_link-' + soc)
+								img.navigation__social_img(src="/images/icon-" + soc + '.png' alt= soc)
+								span.hide= soc
 
-			ul.navigation__list
-					li.navigation__item
-						a.navigation__link(href="#tournament") tournament
-					li.navigation__item
-						a.navigation__link(href="#teams") teams
-					li.navigation__item
-						a.navigation__link(href="#sponsors") sponsors
-					li.navigation__item
-						a.navigation__link(href="#join") join
-					li.navigation__item
-						a.navigation__link(href="#about-us") about us
-	.container
-		a(href="").logo
-			.logo__wrap
-				img.logo__img(src="images/logo.png" alt="soccer logo")
+				ul.navigation__list
+					each item in ['location', 'grandstand', 'teams', 'sponsors', 'contacts']
+						li.navigation__item
+							a.navigation__link(href="#" + item)= item
+
 

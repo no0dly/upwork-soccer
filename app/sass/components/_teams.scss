@@ -1,22 +1,22 @@
-.team__list {
+.teams__list {
 	padding-left: 0;
 	list-style: none;
 }
-.team__item {
-	.content ,
-	.content__title  {
+.teams__item {
+	.teams__content ,
+	.teams__content_title  {
 		margin-bottom: 20px;
 	}
 }
-.team__img {
+.teams__img {
 	width: 100%;
 }
 
-.team__title {
+.teams__content_title {
 	margin-bottom: 38px;
 }
 
-.team__link {
+.teams__link {
 	position: relative;
 	display: block;
 	border:10px solid #fff;

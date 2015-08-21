@@ -1,8 +1,8 @@
-.zap-feature{
+.grandstand {
 	margin-bottom: 230px;
 }
 
-.zap-feature__text{
+.grandstand__text {
 	font-family: 'Myriad Pro';
 	color:  #959595;
 	font-size:0.875em;
@@ -12,7 +12,7 @@
 	margin-bottom: 10px;
 }
 
-.zap-feature__link{
+.grandstand__link {
 	display: block;
 	text-decoration: none;
 	font-family: 'Myriad Pro';
@@ -27,12 +27,13 @@
 		text-decoration: underline;
 	}
 }
-.zap-feature__title {
+
+.grandstand__title {
 	@extend  .title;
 	text-transform: uppercase;
-	margin-bottom: 30px;	
+	margin-bottom: 30px;
 }
-.zap-feature__slogan{
+.grandstand__slogan {
 	margin: 0 0 30px;
 	padding: 0 3px 0 0 ;
 	font-family: 'Myriad Pro';
@@ -41,6 +42,9 @@
 	font-weight: 400;
 	letter-spacing: 0.44px;
 	text-align: right;
-	border-right: 5px solid   rgba(156, 156, 156, 0.2);
-	span { 	font-weight: 700; }
+	border-right: 5px solid rgba(156, 156, 156, 0.2);
+	
+	span { 
+		font-weight: 700;
+	}
 }
