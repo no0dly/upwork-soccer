@@ -26,32 +26,32 @@
 /* font-family: "roboto_slabbold"; */
 @font-face {
   font-family: 'roboto_slabbold';
-  src: url("robotoslab-bold-webfont.eot");
-  src: url("robotoslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("robotoslab-bold-webfont.woff2") format("woff2"), url("robotoslab-bold-webfont.woff") format("woff"), url("robotoslab-bold-webfont.ttf") format("truetype");
+  src: url("../fonts/roboto_slab/robotoslab-bold-webfont.eot");
+  src: url("../fonts/roboto_slab/robotoslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto_slab/robotoslab-bold-webfont.woff2") format("woff2"), url("../fonts/roboto_slab/robotoslab-bold-webfont.woff") format("woff"), url("../fonts/roboto_slab/robotoslab-bold-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 /* font-family: "roboto_slablight"; */
 @font-face {
   font-family: 'roboto_slablight';
-  src: url("robotoslab-light-webfont.eot");
-  src: url("robotoslab-light-webfont.eot?#iefix") format("embedded-opentype"), url("robotoslab-light-webfont.woff2") format("woff2"), url("robotoslab-light-webfont.woff") format("woff"), url("robotoslab-light-webfont.ttf") format("truetype");
+  src: url("../fonts/roboto_slab/robotoslab-light-webfont.eot");
+  src: url("../fonts/roboto_slab/robotoslab-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto_slab/robotoslab-light-webfont.woff2") format("woff2"), url("../fonts/roboto_slab/robotoslab-light-webfont.woff") format("woff"), url("../fonts/roboto_slab/robotoslab-light-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 /* font-family: "roboto_slabregular"; */
 @font-face {
   font-family: 'roboto_slabregular';
-  src: url("robotoslab-regular-webfont.eot");
-  src: url("robotoslab-regular-webfont.eot?#iefix") format("embedded-opentype"), url("robotoslab-regular-webfont.woff2") format("woff2"), url("robotoslab-regular-webfont.woff") format("woff"), url("robotoslab-regular-webfont.ttf") format("truetype");
+  src: url("../fonts/roboto_slab/robotoslab-regular-webfont.eot");
+  src: url("../fonts/roboto_slab/robotoslab-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto_slab/robotoslab-regular-webfont.woff2") format("woff2"), url("../fonts/roboto_slab/robotoslab-regular-webfont.woff") format("woff"), url("../fonts/roboto_slab/robotoslab-regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 /* font-family: "roboto_slabthin"; */
 @font-face {
   font-family: 'roboto_slabthin';
-  src: url("robotoslab-thin-webfont.eot");
-  src: url("robotoslab-thin-webfont.eot?#iefix") format("embedded-opentype"), url("robotoslab-thin-webfont.woff2") format("woff2"), url("robotoslab-thin-webfont.woff") format("woff"), url("robotoslab-thin-webfont.ttf") format("truetype");
+  src: url("../fonts/roboto_slab/robotoslab-thin-webfont.eot");
+  src: url("../fonts/roboto_slab/robotoslab-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto_slab/robotoslab-thin-webfont.woff2") format("woff2"), url("../fonts/roboto_slab/robotoslab-thin-webfont.woff") format("woff"), url("../fonts/roboto_slab/robotoslab-thin-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -607,7 +607,7 @@ p {
   position: absolute;
   left: -9999px; }
 
-.title, .motto__title, .team__title, .grandstand__title, .sponsors__title {
+.title, .team__title, .grandstand__title, .sponsors__title {
   font-family: 'Myriad Pro';
   color: #323232;
   font-size: 30px;
@@ -616,7 +616,7 @@ p {
   text-align: center;
   margin: 0;
   display: block; }
-  .title:before, .motto__title:before, .team__title:before, .grandstand__title:before, .sponsors__title:before, .title:after, .motto__title:after, .team__title:after, .grandstand__title:after, .sponsors__title:after {
+  .title:before, .team__title:before, .grandstand__title:before, .sponsors__title:before, .title:after, .team__title:after, .grandstand__title:after, .sponsors__title:after {
     content: '';
     display: block;
     width: 100%;
@@ -627,69 +627,7 @@ p {
 
 .page-header {
   padding-top: 27px;
-  margin-bottom: 76px; }
-
-.logo {
-  display: block;
-  position: relative;
-  float: left; }
-  .logo:before,
-  .logo:after {
-    content: " ";
-    display: table; }
-  .logo:after {
-    clear: both; }
-
-.logo__wrap {
-  width: 151px;
-  height: 161px; }
-
-.logo__img {
-  width: 100%; }
-
-.logo__title {
-  white-space: nowrap;
-  font-family: "OpenSans";
-  color: #494848;
-  font-size: 16px;
-  font-weight: 600;
-  font-style: italic;
-  text-align: left;
-  left: 130px;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50); }
-
-.motto__title {
-  margin-bottom: 20px; }
-
-.motto__quote {
-  font-family: 'Cambria';
-  color: #3c3b3b;
-  font-style: italic;
-  line-height: 24px;
-  text-align: center; }
-
-.content {
-  font-family: 'Myriad Pro';
-  color: #383838;
-  font-weight: 400;
-  font-size: 0.8125em;
-  line-height: 20px;
-  text-align: left;
-  letter-spacing: 0.234px;
-  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
-  margin-bottom: 240px; }
-
-.content__title {
-  text-transform: uppercase;
-  font-size: 1.125em;
-  padding: 0;
-  margin: 0 0 30px; }
-
-.content__more {
-  color: #383838;
-  text-decoration: none; }
+  margin-bottom: 35px; }
 
 .page-footer {
   background: #e8e8e8; }
@@ -723,59 +661,123 @@ p {
   font-weight: 400;
   line-height: 20px; }
 
-.logo {
+.top-navigation:before {
+  content: '';
   display: block;
-  position: relative;
-  float: left; }
-  .logo:before,
-  .logo:after {
-    content: " ";
-    display: table; }
-  .logo:after {
-    clear: both; }
-
-.logo__wrap {
-  width: 191px;
-  height: 202px; }
-
-.logo__img {
+  background: #b81401;
+  height: 27px;
   width: 100%; }
 
-.logo__title {
-  white-space: nowrap;
-  font-family: "OpenSans";
-  color: #494848;
-  font-size: 16px;
-  font-weight: 600;
-  font-style: italic;
-  text-align: left;
-  left: 130px;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50); }
+.logo {
+  display: block;
+  position: relative; }
+
+.logo__img {
+  max-width: 100%;
+  height: auto; }
+
+.navigation {
+  margin-bottom: 60px; }
+  .navigation:before,
+  .navigation:after {
+    content: " ";
+    display: table; }
+  .navigation:after {
+    clear: both; }
+
+.navigation__lang,
+.navigation__social_list,
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.navigation__lang {
+  text-align: right; }
+
+.navigation__lang_item,
+.navigation__social_item,
+.navigation__item {
+  display: inline-block; }
+
+.navigation__social_list {
+  background-color: #b81401;
+  max-width: 250px;
+  padding: 9px 20px;
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+  float: right; }
+
+.navigation__social_item:not(:first-child) {
+  padding-left: 2px; }
+
+.navigation__lang {
+  padding: 15px 0 0;
+  width: 62%; }
+
+.navigation__lang_item {
+  padding-left: 10px; }
+
+.navigation__list {
+  float: right; }
+
+.navigation__item {
+  margin-right: 25px; }
+
+.navigation__link {
+  font-size: 1.125em;
+  font-family: "roboto_slabbold";
+  text-transform: uppercase;
+  color: #1b3349;
+  text-decoration: none; }
+  .navigation__link:hover {
+    transition: 0.5s;
+    color: #b81401; }
+
+.motto {
+  text-align: center;
+  margin-bottom: 50px; }
+  .motto:before {
+    content: '';
+    display: block;
+    background: url("../images/seporator.png");
+    height: 6px;
+    max-width: 100%; }
+
+.motto__title {
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2.875em;
+  font-family: 'roboto_slabregular';
+  font-weight: 100;
+  color: #1b3349;
+  max-width: 435px;
+  margin: 40px auto 25px;
+  text-transform: uppercase;
+  line-height: 1; }
+
+.motto__quote {
+  font-family: 'roboto_slablight';
+  color: #3c3b3b;
+  line-height: 24px;
+  font-size: 0.9375em; }
 
 .bxslider {
   padding: 0;
   margin: 0; }
 
-.bxslider img {
-  width: 100%; }
-
-.bx-wrapper {
-  margin: 72px 0; }
-
-.bx-wrapper .bx-prev,
-.bx-wrapper .bx-next {
-  width: 32px;
-  height: 32px;
-  /* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */ }
+.bx-wrapper .bx-controls-direction a {
+  width: 65px;
+  height: 65px; }
 
 .bx-wrapper .bx-prev {
-  left: -6px;
+  left: 5px;
   background: url("../images/bx-prev.png") no-repeat; }
 
 .bx-wrapper .bx-next {
-  right: -0;
+  right: 15px;
   background: url("../images/bx-next.png") no-repeat; }
   .bx-wrapper .bx-next:hover {
     background: url("../images/bx-next.png") no-repeat; }
@@ -797,6 +799,9 @@ p {
     background: url("../images/radio-selected.png") no-repeat; }
   .bx-wrapper .bx-pager.bx-default-pager a.active {
     background: url("../images/radio-selected.png") no-repeat; }
+
+.bx-wrapper .bx-pager {
+  bottom: 20px; }
 
 .bxslider__shadow {
   position: relative;

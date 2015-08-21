@@ -4,31 +4,17 @@
 	margin: 0;
 }
 
-.bxslider img {
-	width: 100%;
+.bx-wrapper .bx-controls-direction a {
+	width: 65px;
+	height: 65px;
 }
 
-.bx-wrapper{ 
-	margin: 72px 0;
-}
-
-
-.bx-wrapper .bx-prev,
-.bx-wrapper .bx-next {
-	
-	width: 32px;
-	height: 32px;
-
-	
-/* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */
-
-}
 .bx-wrapper .bx-prev {
-	left: -6px;
+	left: 5px;
 	background:url('../images/bx-prev.png') no-repeat;
 }
 .bx-wrapper .bx-next{
-	right: -0;
+	right: 15px;
 	background:url('../images/bx-next.png') no-repeat;
 	&:hover {
 		background:url('../images/bx-next.png') no-repeat;
@@ -58,6 +44,10 @@
 	&.active {
 		background: url('../images/radio-selected.png') no-repeat;
 	}
+}
+
+.bx-wrapper .bx-pager {
+	bottom: 20px;
 }
 
 .bxslider__shadow {
