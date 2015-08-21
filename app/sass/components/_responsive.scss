@@ -1,8 +1,9 @@
 
-@media (max-width: $screen-xs){
- 	.page-header {
- 		padding-top: 0;
- 	}
+@media (max-width: $screen-xs-max){
+	.page-header {
+		padding-top: 0;
+		text-align: center;
+	}
 
 
 	.navigation__trigger {
@@ -28,16 +29,17 @@
 	}
 
 	.logo{
-		@include centerer (true, true);
-		opacity: 0.3;
+		float: none;
+		display: inline-block;
+		margin-top: 40px;
 	}
 
 	.about__block{
 		padding-left:10px;
 	}
 
-	.team__link {	
-		border:5px solid #fff;	
+	.team__link {
+		border:5px solid #fff;
 	}
 
 }
@@ -45,7 +47,7 @@
 
 @media (min-width: $screen-xs-max){
 	.navigation__list {
- 		display: block!important;
- 		// width: 100%;
- 	}
+		display: block!important;
+		// width: 100%;
+	}
 }

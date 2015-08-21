@@ -10,7 +10,7 @@ var app = (function () {
 		var
 			menu = $('.navigation__list');
 
-		menu.slideToggle();
+		menu.stop().slideToggle();
 	}
 
 	function _scrolling(e) {
@@ -53,7 +53,8 @@ var app = (function () {
 				auto: true
 			});
 			$('.tracked').waypoint({
-				handler: _waypoint
+				handler: _waypoint,
+				offset: '15%'
 			});
 
 		}

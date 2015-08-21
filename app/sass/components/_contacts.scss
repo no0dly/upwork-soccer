@@ -1,0 +1,66 @@
+.about {
+	margin-bottom: 150px;
+}
+.about__block{
+	padding: 0;
+}
+.about__title{
+	font-family: 'Myriad Pro';
+	color:  #3a3939;
+	font-size: 0.875em;
+	font-weight: 700;
+	margin-top: 30px;
+	line-height: 36px;
+	text-align: left;
+
+	&:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 2px;
+		border-top:1px solid rgba(200, 200, 200,0.9);
+		background:#fcfafa;
+	}
+}
+
+
+
+// contacts
+
+.contacts {
+	font-family: 'roboto_slabregular';
+	color:  #ffffff;
+	text-align: left;
+}
+
+.contacts__title {
+	font-size: 46px;
+	font-style: normal;
+	// line-height: 48px;
+}
+
+.address__list{
+	list-style: none;
+}
+
+.address__item {
+	font-style: normal;
+	font-size: 16px;
+
+}
+
+.address-before{
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	background: center no-repeat;
+}
+
+@each $icon in $(addr, phone, email) {
+	.address__item--#{$icon}:before {
+		@extend .address-before;
+		background-image: url('../images/icon-#{$icon}.png');
+	}
+}

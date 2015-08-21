@@ -1,0 +1,25 @@
+.contacts.col-xs-6
+	address.address
+		h2.contacts__title Contact Us
+		ul.address__list
+			li.address__item.address__item--addr Poland, Cracow, Zielona 10
+			li.address__item.address__item--phone +48 12 000 000 000
+			li.address__item.address__item--email info@grandstand.com
+
+	.socials
+		h2.contacts__title Get Social
+		ul.socials__list
+			each soc in ['tw', 'fb', 'ins', 'ghost', 'v', 'in']
+				li.socials__item
+					a.socials__link(href='#' class='socials__link-' + soc)
+						img.socials__img(src="/images/icon-" + soc + '.png' alt= soc)
+						span.hide= soc
+.touch.col-xs-6
+	h2.contacts__title Contact Us
+		form.touch__form(action="")
+			.input-group
+				input.input-text(type="text" placeholder="Your Name")
+				input.input-text(type="text" placeholder="Your Email")
+				input.input-area(type="text" placeholder="Write your message here")
+			.submit
+				input.submit__buttom(type="submit" value="send a message")
