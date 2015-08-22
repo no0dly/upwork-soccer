@@ -63,31 +63,36 @@ input {
 	max-width: 150px;
 }
 
-
+.input-area,
 .input-text {
-	height: 22px;
-	margin-bottom: 4px;
-	width: 100%;
-	font-size: 0.7em;
-	padding-left: 5px;
+	width: 450px;
+	font-family: 'roboto_slabregular';
+	color:  #c2c2c2;
+	font-size:14px;
+	text-align: left;
+	border-radius: 4px;
+	padding: 12px;
+	border:0;
+	box-shadow:  inset 0 0 8px 4px #dcdcdc;
 }
 
-.input-group {
-	margin-bottom: 8px;
+.input-area {
+	margin-top: 20px;
+	min-height: 145px;
 }
 
-.submit {
-	text-align: right;
-}
 
 .submit__buttom {
-	width: 51px;
-	height: 22px;
-	-webkit-border-radius: 1px 2px;
-	-moz-border-radius: 1px 2px;
-	border-radius: 1px 2px;
-	background-color: #b81401;
-	font-size: 0.7em;
-	border: none;
-	box-shadow: inset 0 1px 1px 1px #d47165;
+	font-family: 'roboto_slabbold';
+	background-color:  #1b3349;
+	width: 452px;
+	color:  #ffffff;
+	font-size: 16px;
+	line-height: 48px;
+	border-radius: 4px;
+	text-align: center;
+	border:0;
+	box-shadow: none;
+	text-transform: uppercase;
 }
+

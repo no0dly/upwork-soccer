@@ -31,21 +31,32 @@
 	font-family: 'roboto_slabregular';
 	color:  #ffffff;
 	text-align: left;
+	@include clearfix;
+	padding: 45px 0 90px;
 }
 
 .contacts__title {
 	font-size: 46px;
 	font-style: normal;
-	// line-height: 48px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 30px;
+	text-transform: uppercase;
 }
 
+.socials__list,
 .address__list{
 	list-style: none;
+	padding-left: 0;
+	font-size: 0;
 }
+
+.address__list{margin-bottom: 78px;}
 
 .address__item {
 	font-style: normal;
 	font-size: 16px;
+	padding: 5px 0;
 
 }
 
@@ -56,11 +67,43 @@
 	width: 20px;
 	height: 20px;
 	background: center no-repeat;
+	margin-right: 10px;
 }
 
-@each $icon in $(addr, phone, email) {
+@each $icon in (addr, phone, email) {
 	.address__item--#{$icon}:before {
 		@extend .address-before;
 		background-image: url('../images/icon-#{$icon}.png');
+	}
+}
+
+.socials__item {
+	display: inline-block;
+	padding-left: 10px;
+	&:first-child {padding-left: 0;}
+}
+
+.socials__link{
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+
+$types: tw, fb, inst , ghost, v, ln;
+
+@each $item in $types {
+
+	$length : length($types);
+	$n: index($types, $item);
+	
+	.socials__link--#{$item} {
+		background: url('../images/social-sprite.png') no-repeat;
+		background-position-x:(-($n - 1)*50 - 4)+ px ;
+		background-position-y: -55px;
+
+		&:hover {
+			background-position-x:(-($n - 1)*50 - 4)+ px ;
+			background-position-y: -5px;
+		}
 	}
 }
