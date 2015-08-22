@@ -86,27 +86,29 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12">
-            <ul class="bxslider">
-              <li><img src="images/slider-first.png" alt="first slide"></li>
-              <li><img src="images/slider-first.png" alt="second slide"></li>
-              <li><img src="images/slider-first.png" alt="third slide"></li>
-            </ul>
-            <div class="bxslider__shadow"><img src="images/shadow.png" alt="" class="shadow__img"></div>
-          </div>
+          <section class="slider">
+            <div class="col-xs-12">
+              <ul class="bxslider">
+                <li><img src="images/slider-first.png" alt="first slide"></li>
+                <li><img src="images/slider-first.png" alt="second slide"></li>
+                <li><img src="images/slider-first.png" alt="third slide"></li>
+              </ul>
+              <div class="bxslider__shadow"><img src="images/shadow.png" alt="" class="shadow__img"></div>
+            </div>
+          </section>
         </div>
         <div class="row">
-          <section class="content">
+          <section class="content no-sep">
             <div class="content__title">
-              <div class="content__title_text">Location</div>
+              <div class="content-title__text">Location</div>
             </div>
             <div class="row">
-              <div class="col-md-5 col-xs-6">
+              <div class="col-md-6 col-xs-6">
                 <div class="location">
                   <h2 class="location__title">Grandstand tournaments</h2>
                   <p class="location__text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. </p><a href="#" class="location__more">Read More</a></div>
               </div>
-              <div class="col-md-5 col-md-offset-2 col-xs-6">
+              <div class="col-md-6 col-xs-6">
                 <div class="location selected">
                   <h2 class="location__title">Grandstand tournaments</h2>
                   <p class="location__text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. </p><a href="#" class="location__more">Read More</a></div>
@@ -117,10 +119,12 @@
         <div class="row">
           <section class="content">
             <div class="grandstand">
+              <div class="content__title">
+                <div class="content-title__text">Grandstand</div>
+              </div>
               <div class="row">
-                <h2 id="tournament" class="grandstand__title tracked">Tournament</h2>
                 <div class="col-md-9 col-sm-12">
-                  <div class="grandstand__slogan">Hey,Welcome to your <span> Awesome </span> web Tournament. Tell your readers about the latest news</div>
+                  <div class="grandstand__slogan">Hey,Welcome to your Awesome web Tournament. Tell your readers about the latest news</div>
                   <div class="grandstand__video"></div>
                 </div>
                 <div class="col-md-3 col-sm-12">
@@ -135,45 +139,67 @@
         <div class="row">
           <section class="content">
             <div class="teams">
-              <div id="teams" class="teams__title tracked">teams</div>
-              <ul class="teams__list row">
-                <li class="teams__item col-sm-4 col-xs-12">
-                  <a rel="group" href="images/image1.jpg" class="teams__link fancybox"><img src="images/image1.jpg" alt="first team" class="teams__img"></a>
-                  <div class="shadow"><img src="../images/shadow.png" alt="" class="shadow__img"></div>
-                  <div class="teams__content">
-                    <h2 class="teams__content_title">Grandstand tournaments</h2>
-                    <p class="teams__content_text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</p>
-                  </div>
-                </li>
-                <li class="teams__item col-sm-4 col-xs-12">
-                  <a rel="group" href="images/image2.jpg" class="teams__link fancybox"><img src="images/image2.jpg" alt="second team" class="teams__img"></a>
-                  <div class="shadow"><img src="../images/shadow.png" alt="" class="shadow__img"></div>
-                  <div class="teams__content">
-                    <h2 class="teams__content_title">Grandstand tournaments</h2>
-                    <p class="teams__content_text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
-                  </div>
-                </li>
-                <li class="teams__item col-sm-4 col-xs-12">
-                  <a rel="group" href="images/image3.jpg" class="teams__link fancybox"><img src="images/image3.jpg" alt="third team" class="teams__img"></a>
-                  <div class="shadow"><img src="../images/shadow.png" alt="" class="shadow__img"></div>
-                  <div class="teams__content">
-                    <h2 class="teams__content_title">Grandstand tournaments</h2>
-                    <p class="teams__content_text">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. </p>
-                  </div>
-                </li>
-              </ul>
+              <div class="content__title">
+                <div class="content-title__text">teams</div>
+              </div>
+              <div class="row">
+                <ul class="teams__list">
+                  <li class="teams__item col-sm-4 col-xs-12">
+                    <a rel="group" href="images/image1.jpg" class="teams__link fancybox"><img src="images/image1.jpg" alt="1 team" class="teams__img"></a>
+                    <div class="shadow"><img src="../images/shadow.png" alt="" class="shadow__img"></div>
+                    <div class="teams__content">
+                      <div class="teams__title">
+                        <h2 class="teams-title__text">Grandstand tournaments</h2></div>
+                      <div class="teams__text">
+                        <div class="teams-text__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</div>
+                      </div><a href="#" class="teams-content__read">Read More</a></div>
+                  </li>
+                  <li class="teams__item col-sm-4 col-xs-12">
+                    <a rel="group" href="images/image2.jpg" class="teams__link fancybox"><img src="images/image2.jpg" alt="2 team" class="teams__img"></a>
+                    <div class="shadow"><img src="../images/shadow.png" alt="" class="shadow__img"></div>
+                    <div class="teams__content">
+                      <div class="teams__title">
+                        <h2 class="teams-title__text">Grandstand tournaments</h2></div>
+                      <div class="teams__text">
+                        <div class="teams-text__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</div>
+                      </div><a href="#" class="teams-content__read">Read More</a></div>
+                  </li>
+                  <li class="teams__item col-sm-4 col-xs-12">
+                    <a rel="group" href="images/image3.jpg" class="teams__link fancybox"><img src="images/image3.jpg" alt="3 team" class="teams__img"></a>
+                    <div class="shadow"><img src="../images/shadow.png" alt="" class="shadow__img"></div>
+                    <div class="teams__content">
+                      <div class="teams__title">
+                        <h2 class="teams-title__text">Grandstand tournaments</h2></div>
+                      <div class="teams__text">
+                        <div class="teams-text__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</div>
+                      </div><a href="#" class="teams-content__read">Read More</a></div>
+                  </li>
+                  <li class="teams__item col-sm-4 col-xs-12">
+                    <a rel="group" href="images/image1.jpg" class="teams__link fancybox"><img src="images/image1.jpg" alt="1 team" class="teams__img"></a>
+                    <div class="shadow"><img src="../images/shadow.png" alt="" class="shadow__img"></div>
+                    <div class="teams__content">
+                      <div class="teams__title">
+                        <h2 class="teams-title__text">Grandstand tournaments</h2></div>
+                      <div class="teams__text">
+                        <div class="teams-text__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</div>
+                      </div><a href="#" class="teams-content__read">Read More</a></div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </section>
         </div>
         <div class="row">
           <section class="content">
+            <div class="content__title">
+              <div class="content-title__text">sponsors</div>
+            </div>
             <div class="sponsors">
-              <h2 id="sponsors" class="sponsors__title tracked">sponsors</h2>
               <ul class="sponsors__list row">
-                <li class="sponsors__item col-xs-6 col-md-3"><img src="../images/icon-legion.png" alt=""></li>
-                <li class="sponsors__item col-xs-6 col-md-3"><img src="../images/icon-volcom.png" alt=""></li>
-                <li class="sponsors__item col-xs-6 col-md-3"><img src="../images/icon-car.png" alt=""></li>
-                <li class="sponsors__item col-xs-6 col-md-3"><img src="../images/icon-jart.png" alt=""></li>
+                <li class="sponsors__item"><img src="../images/icon-legion.png" alt=""></li>
+                <li class="sponsors__item"><img src="../images/icon-volcom.png" alt=""></li>
+                <li class="sponsors__item"><img src="../images/icon-car.png" alt=""></li>
+                <li class="sponsors__item"><img src="../images/icon-jart.png" alt=""></li>
               </ul>
             </div>
           </section>

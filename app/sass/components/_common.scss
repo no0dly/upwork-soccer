@@ -80,7 +80,7 @@ p {
 }
 
 .team__title{
-	@extend  .title;
+	@extend .title;
 }
 
 // footer
@@ -112,13 +112,28 @@ p {
 
 // content
 
+.content {
+	margin-bottom: 100px;
+}
+
+.content:not(.no-sep) {
+	&:before {
+		content: '';
+		display: block;
+		background: url('../images/seporator.png');
+		height: 6px;
+		max-width: 100%;
+		margin-bottom: 80px;
+	}
+}
+
 .content__title {
 	text-align: center;
 	overflow: hidden;
 	margin-bottom: 50px;
 }
 
-.content__title_text {
+.content-title__text {
 	font-size: 2.875em;
 	font-family: 'roboto_slabregular';
 	font-weight: 100;
@@ -127,6 +142,7 @@ p {
 	position: relative;
 	display: inline-block;
 	padding: 0 70px;
+	text-transform: uppercase;
 
 	&:before, &:after {
 		content: '';
@@ -138,6 +154,7 @@ p {
 		top: 50%;
 		margin-top: -1px;
 	}
+	
 	&:before {
 		left: 100%;
 	}

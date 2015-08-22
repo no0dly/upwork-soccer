@@ -2,25 +2,49 @@
 	padding-left: 0;
 	list-style: none;
 }
-.teams__item {
-	.teams__content ,
-	.teams__content_title  {
-		margin-bottom: 20px;
-	}
-}
+
 .teams__img {
 	width: 100%;
 }
 
-.teams__content_title {
-	margin-bottom: 38px;
+.teams-title__text,
+.teams-text__content {
+	margin: 0;
+	padding: 0;
+}
+
+.teams__title,
+.teams__text {
+	margin-bottom: 25px;
+}
+
+.teams-title__text {
+	font-size: 1.125em;
+	font-family: 'roboto_slabbold';
+	color: #1b3349;
+}
+
+.teams-text__content {
+	font-size: 0.8125em;
+	font-family: 'roboto_slabregular';
+	color: #5e5e5e;
+}
+
+.teams-content__read {
+	font-size: 0.8125em;
+	font-family: 'roboto_slabbold';
+	color: #b81401;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .teams__link {
 	position: relative;
 	display: block;
 	border:10px solid #fff;
-	font-size: 0;
+	color:  #b81401;
 
 	&:before {
 		@include centerer(true, true);

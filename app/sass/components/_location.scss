@@ -5,10 +5,31 @@
 }
 
 .location__title {
+	font-size: 1.5em;
+	font-family: 'roboto_slabbold';
+	color: #1b3349;
 	text-transform: uppercase;
+	padding: 0;
+	margin: 0 0 30px;
 }
 
-.location__more{
+.location__text {
+	font-family: 'roboto_slabregular';
+	font-size: 0.8125em;
+	color: #3c3c3c;
+	margin-bottom: 30px;
+}
 
+.location__more {
+	font-size: 0.8125em;
+	font-family: 'roboto_slabbold';
+	color: #b81401;
+}
+
+.selected {
+	background: #1b3248;
+	.location__title, .location__text {
+		color: #fff;
+	}
 }
 

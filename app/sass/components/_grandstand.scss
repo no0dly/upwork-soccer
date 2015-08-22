@@ -1,13 +1,25 @@
 .grandstand {
 	margin-bottom: 230px;
+	.col-md-3 {
+		padding-left: 0px;
+	}
+}
+
+.grandstand__slogan {
+	margin: 0 0 30px;
+	font-family: 'roboto_slablight';
+	color:  #494949;
+	font-size: 1.875em;
+	letter-spacing: 0.44px;
+	border-right: 5px solid rgba(156, 156, 156, 0.2);
+	padding: 0;
 }
 
 .grandstand__text {
-	font-family: 'Myriad Pro';
+	font-family: 'roboto_slabregular';
 	color:  #959595;
-	font-size:0.875em;
-	font-weight: 400;
-	letter-spacing: 0.182px;
+	font-size:0.8125em;
+	font-weight: 100;
 	text-align: left;
 	margin-bottom: 10px;
 }
@@ -15,12 +27,9 @@
 .grandstand__link {
 	display: block;
 	text-decoration: none;
-	font-family: 'Myriad Pro';
-	color:  #2a99d8;
+	font-family: 'roboto_slabbold';
+	color:  #b81401;
 	font-size: 0.875em;
-	font-weight: 700;
-	font-style: italic;
-	letter-spacing: 0.182px;
 	text-align: right;
 
 	&:hover {
@@ -28,23 +37,3 @@
 	}
 }
 
-.grandstand__title {
-	@extend  .title;
-	text-transform: uppercase;
-	margin-bottom: 30px;
-}
-.grandstand__slogan {
-	margin: 0 0 30px;
-	padding: 0 3px 0 0 ;
-	font-family: 'Myriad Pro';
-	color:  #494949;
-	font-size: 2.114em;
-	font-weight: 400;
-	letter-spacing: 0.44px;
-	text-align: right;
-	border-right: 5px solid rgba(156, 156, 156, 0.2);
-	
-	span { 
-		font-weight: 700;
-	}
-}

@@ -1,3 +1,6 @@
+.slider {
+	@include clearfix;
+}
 
 .bxslider{
 	padding: 0;
@@ -7,30 +10,42 @@
 .bx-wrapper .bx-controls-direction a {
 	width: 65px;
 	height: 65px;
+	z-index: 999;
 }
 
 .bx-wrapper .bx-prev {
-	left: 5px;
 	background:url('../images/bx-prev.png') no-repeat;
+	&:hover {
+		background:url('../images/bx-prev.png') no-repeat;
+	}
 }
+
 .bx-wrapper .bx-next{
-	right: 15px;
 	background:url('../images/bx-next.png') no-repeat;
 	&:hover {
 		background:url('../images/bx-next.png') no-repeat;
 	}
 }
 
+.slider .bx-next {
+	right: 10px;
+}
+
+.slider .bx-prev {
+	left: 10px;
+}
+
 .bx-wrapper .bx-viewport {
 	box-shadow: none;
 	background: none;
 	border-color: transparent;
+	left: 0;
 }
 
 .bx-prev,
 .bx-next {
 	top: 50%;
-	margin-top: -15px;
+	margin-top: -32px;
 }
 
 /*pager*/
@@ -58,6 +73,21 @@
 
 .bxslider__shadow {
 	position: relative;
-	bottom: 72px;
+	bottom: 65px;
 	z-index: 0;
+}
+
+//sponsors
+
+.sponsors .bx-next {
+	right: -75px;
+}
+
+.sponsors .bx-prev {
+	left: -75px;
+}
+
+//teams
+.teams .bx-wrapper .bx-controls-direction a {
+	top: 30%;
 }

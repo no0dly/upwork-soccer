@@ -48,15 +48,29 @@ var app = (function () {
 		init: function () {
 			setUpListeners();
 			$(".fancybox").fancybox();
-			$('.bxslider').bxSlider({
+			$('.slider .bxslider').bxSlider({
 				pager: true,
 				auto: true
+			});
+			$('.sponsors__list').bxSlider({
+				minSlides: 2,
+				maxSlides: 4,
+				slideWidth: 200,
+				slideMargin: 10,
+				pager: false
+			});
+			$('.teams__list').bxSlider({
+				pager: false,
+				controls: true,
+				slideWidth: 380,
+				slideMargin: 10,
+				minSlides: 3,
+				maxSlides: 3
 			});
 			$('.tracked').waypoint({
 				handler: _waypoint,
 				offset: '15%'
 			});
-
 		}
 	};
 
