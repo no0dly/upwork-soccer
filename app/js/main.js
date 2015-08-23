@@ -17,7 +17,7 @@ var app = (function () {
 		e.preventDefault();
 		var
 			elementClick = $(this).attr("href"),
-			destination = $(elementClick).offset().top,
+			destination = $(elementClick).offset().top - 160,
 			body = $('body');
 
 
@@ -46,7 +46,7 @@ var app = (function () {
 				} else {
 
 					prevLink.addClass('active');
-					
+
 				}
 			}
 
@@ -76,13 +76,6 @@ var app = (function () {
 			$('.slider .bxslider').bxSlider({
 				pager: true,
 				auto: true
-			});
-			$('.sponsors__list').bxSlider({
-				minSlides: 2,
-				maxSlides: 4,
-				slideWidth: 200,
-				slideMargin: 10,
-				pager: false
 			});
 			$('.teams__list').bxSlider({
 				pager: false,
