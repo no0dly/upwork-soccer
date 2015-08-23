@@ -90,3 +90,47 @@
 		color: #b81401;
 	}
 }
+
+//pinned nav
+
+.pinned {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99999999;
+	&:before {
+		height: 10px;
+	}
+	.container {
+		background: #b81401;
+		-webkit-border-radius: 0 0 10px 10px;
+		-moz-border-radius:  0 0 10px 10px;
+		border-radius:  0 0 10px 10px;
+	}
+	.logo__wrap {
+		height: 140px;
+		width: 134px;
+	}
+	.logo {
+		margin-bottom: 10px;
+		padding-top: 0;
+	}
+	.navigation {
+		margin-bottom: 25px;
+		padding-top: 10px;
+	}
+	.navigation__link {
+		color: #fff;
+		&:hover {
+			color: #000;
+		}
+	}
+	.navigation__lang_img {
+		border: 1px solid #fff;
+	}
+	.active {
+		color: #000;
+	}
+}
+

@@ -24,7 +24,7 @@ var app = (function () {
 		body.animate( { scrollTop: destination }, 1100 );
 	}
 
-	function _waypoint () {
+	function _waypoint ( direction ) {
 		
 		var
 			$this = $(this.element),
@@ -33,14 +33,39 @@ var app = (function () {
 
 		$.each( navLi, function(){
 			var $this = $(this),
-				link = $this.children('a');
+				link = $this.children('a'),
+				prevLink = $this.prev().children('a');
 
 			link.removeClass('active');
 
 			if ( link.attr('href') === hash ) {
-				link.addClass('active');
+				if(direction === 'down') {
+
+					link.addClass('active');
+
+				} else {
+
+					prevLink.addClass('active');
+					
+				}
 			}
+
 		});
+	}
+
+	function _slideMenu ( direction ) {
+
+		var
+			nav = $('#menu');
+
+		if ( direction === 'down') {
+			nav.hide().addClass('pinned').slideDown(1000);
+		} else {
+			nav.slideUp(function(){
+				nav.removeClass('pinned').fadeIn(500);
+			});
+		}
+		
 	}
 
 
@@ -69,6 +94,10 @@ var app = (function () {
 			});
 			$('.tracked').waypoint({
 				handler: _waypoint,
+				offset: '20%'
+			});
+			$('.slide-menu').waypoint({
+				handler: _slideMenu,
 				offset: '15%'
 			});
 		}

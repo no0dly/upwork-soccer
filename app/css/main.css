@@ -626,7 +626,8 @@ p {
     background: #fcfafa; }
 
 .page-header {
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  height: 253px; }
 
 .page-footer {
   background: #595959;
@@ -782,6 +783,37 @@ p {
   .navigation__link:hover {
     transition: 0.5s;
     color: #b81401; }
+
+.pinned {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999999; }
+  .pinned:before {
+    height: 10px; }
+  .pinned .container {
+    background: #b81401;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px; }
+  .pinned .logo__wrap {
+    height: 140px;
+    width: 134px; }
+  .pinned .logo {
+    margin-bottom: 10px;
+    padding-top: 0; }
+  .pinned .navigation {
+    margin-bottom: 25px;
+    padding-top: 10px; }
+  .pinned .navigation__link {
+    color: #fff; }
+    .pinned .navigation__link:hover {
+      color: #000; }
+  .pinned .navigation__lang_img {
+    border: 1px solid #fff; }
+  .pinned .active {
+    color: #000; }
 
 .motto {
   text-align: center;
