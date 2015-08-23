@@ -11,6 +11,7 @@
 .logo {
 	display: block;
 	position: relative;
+	padding-top: 20px;
 }
 
 .logo__img {
@@ -84,6 +85,7 @@
 	color: #1b3349;
 	text-decoration: none;
 	&:hover {
+
 		transition: 0.5s;
 		color: #b81401;
 	}

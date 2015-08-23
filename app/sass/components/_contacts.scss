@@ -24,49 +24,91 @@
 }
 
 
-.contacts__list {
-	font-family: 'Myriad Pro';
-	color: #383838;
-	font-size: 0.8125em;
-	font-weight: 400;
-	line-height: 30px;
+
+// contacts
+
+.contacts {
+	font-family: 'roboto_slabregular';
+	color:  #ffffff;
 	text-align: left;
-	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
+	@include clearfix;
+	padding: 45px 0 50px;
 }
 
-.contacts__term{
-	width: 10px;
-	float: left;
-	clear: left;
-}
-
-.contacts__def{
-	float: left;
-	margin-left: 16px;
-}
-
-.social__list {
+.contacts__title {
+	font-size: 2.875em;
+	font-weight: 100;
+	font-style: normal;
 	padding: 0;
 	margin: 0;
-	list-style: none;
-	padding-top: 38px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
 }
 
-.social__item {
+.socials__list,
+.address__list{
+	list-style: none;
+	padding-left: 0;
+	font-size: 0;
+}
+
+.address__list{
+	margin-bottom: 78px;
+}
+
+.address__item {
+	font-style: normal;
+	font-size: 16px;
+	padding: 5px 0;
+
+}
+
+.address-before{
+	content: '';
 	display: inline-block;
-	opacity: 0.7;
-	&:hover {
-		opacity: 1;
-		transition: 0.3s;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	background: center no-repeat;
+	margin-right: 10px;
+}
+
+@each $icon in (addr, phone, email) {
+	.address__item--#{$icon}:before {
+		@extend .address-before;
+		background-image: url('../images/icon-#{$icon}.png');
 	}
 }
 
-.social__link {
-	display: block;
-	width: 35px;
-	height: 35px;
+.socials__item {
+	display: inline-block;
+	padding-left: 10px;
+	&:first-child {
+		padding-left: 0;
+	}
 }
 
-.social__img {
-	width: 100%;
+.socials__link{
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+
+$types: tw, fb, inst , ghost, v, ln;
+
+@each $item in $types {
+
+	$length : length($types);
+	$n: index($types, $item);
+	
+	.socials__link--#{$item} {
+		background: url('../images/social-sprite.png') no-repeat;
+		background-position-x:(-($n - 1)*50 - 4)+ px ;
+		background-position-y: -55px;
+
+		&:hover {
+			background-position-x:(-($n - 1)*50 - 4)+ px ;
+			background-position-y: -5px;
+		}
+	}
 }

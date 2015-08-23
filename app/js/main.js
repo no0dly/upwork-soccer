@@ -62,8 +62,8 @@ var app = (function () {
 			$('.teams__list').bxSlider({
 				pager: false,
 				controls: true,
-				slideWidth: 380,
-				slideMargin: 10,
+				slideWidth: 320,
+				slideMargin: 20,
 				minSlides: 3,
 				maxSlides: 3
 			});

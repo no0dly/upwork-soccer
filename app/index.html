@@ -100,7 +100,7 @@
         <div class="row">
           <section class="content no-sep">
             <div class="content__title">
-              <div class="content-title__text">Location</div>
+              <div id="location" class="content-title__text">Location</div>
             </div>
             <div class="row">
               <div class="col-md-6 col-xs-6">
@@ -120,12 +120,14 @@
           <section class="content">
             <div class="grandstand">
               <div class="content__title">
-                <div class="content-title__text">Grandstand</div>
+                <div id="grandstand" class="content-title__text">Grandstand</div>
               </div>
               <div class="row">
                 <div class="col-md-9 col-sm-12">
                   <div class="grandstand__slogan">Hey,Welcome to your Awesome web Tournament. Tell your readers about the latest news</div>
-                  <div class="grandstand__video"></div>
+                  <div class="grandstand__video">
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/N2tlQSnWxCE" frameborder="0" allowfullscreen></iframe>
+                  </div>
                 </div>
                 <div class="col-md-3 col-sm-12">
                   <p class="grandstand__text">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum
@@ -140,49 +142,49 @@
           <section class="content">
             <div class="teams">
               <div class="content__title">
-                <div class="content-title__text">teams</div>
+                <div id="teams" class="content-title__text">teams</div>
               </div>
               <div class="row">
                 <ul class="teams__list">
-                  <li class="teams__item col-sm-4 col-xs-12">
+                  <li class="teams__item">
                     <a rel="group" href="images/image1.jpg" class="teams__link fancybox"><img src="images/image1.jpg" alt="1 team" class="teams__img"></a>
                     <div class="shadow"><img src="../images/shadow.png" alt="" class="shadow__img"></div>
                     <div class="teams__content">
                       <div class="teams__title">
                         <h2 class="teams-title__text">Grandstand tournaments</h2></div>
                       <div class="teams__text">
-                        <div class="teams-text__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</div>
-                      </div><a href="#" class="teams-content__read">Read More</a></div>
+                        <div class="teams-text__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</div><a href="#" class="teams-content__read">Read More</a></div>
+                    </div>
                   </li>
-                  <li class="teams__item col-sm-4 col-xs-12">
+                  <li class="teams__item">
                     <a rel="group" href="images/image2.jpg" class="teams__link fancybox"><img src="images/image2.jpg" alt="2 team" class="teams__img"></a>
                     <div class="shadow"><img src="../images/shadow.png" alt="" class="shadow__img"></div>
                     <div class="teams__content">
                       <div class="teams__title">
                         <h2 class="teams-title__text">Grandstand tournaments</h2></div>
                       <div class="teams__text">
-                        <div class="teams-text__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</div>
-                      </div><a href="#" class="teams-content__read">Read More</a></div>
+                        <div class="teams-text__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</div><a href="#" class="teams-content__read">Read More</a></div>
+                    </div>
                   </li>
-                  <li class="teams__item col-sm-4 col-xs-12">
+                  <li class="teams__item">
                     <a rel="group" href="images/image3.jpg" class="teams__link fancybox"><img src="images/image3.jpg" alt="3 team" class="teams__img"></a>
                     <div class="shadow"><img src="../images/shadow.png" alt="" class="shadow__img"></div>
                     <div class="teams__content">
                       <div class="teams__title">
                         <h2 class="teams-title__text">Grandstand tournaments</h2></div>
                       <div class="teams__text">
-                        <div class="teams-text__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</div>
-                      </div><a href="#" class="teams-content__read">Read More</a></div>
+                        <div class="teams-text__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</div><a href="#" class="teams-content__read">Read More</a></div>
+                    </div>
                   </li>
-                  <li class="teams__item col-sm-4 col-xs-12">
+                  <li class="teams__item">
                     <a rel="group" href="images/image1.jpg" class="teams__link fancybox"><img src="images/image1.jpg" alt="1 team" class="teams__img"></a>
                     <div class="shadow"><img src="../images/shadow.png" alt="" class="shadow__img"></div>
                     <div class="teams__content">
                       <div class="teams__title">
                         <h2 class="teams-title__text">Grandstand tournaments</h2></div>
                       <div class="teams__text">
-                        <div class="teams-text__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</div>
-                      </div><a href="#" class="teams-content__read">Read More</a></div>
+                        <div class="teams-text__content">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</div><a href="#" class="teams-content__read">Read More</a></div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -192,7 +194,7 @@
         <div class="row">
           <section class="content">
             <div class="content__title">
-              <div class="content-title__text">sponsors</div>
+              <div id="sponsors" class="content-title__text">sponsors</div>
             </div>
             <div class="sponsors">
               <ul class="sponsors__list row">
@@ -207,55 +209,36 @@
       </div>
     </div>
     <footer class="page-footer">
+      <div class="contacts">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6"><address class="address"><h2 id="contacts" class="contacts__title">Contact Us</h2><ul class="address__list"><li class="address__item address__item--addr">Poland, Cracow, Zielona 10</li><li class="address__item address__item--phone">+48 12 000 000 000</li><li class="address__item address__item--email">info@grandstand.com</li></ul><div class="socials"><h2 class="contacts__title">Get Social</h2><ul class="socials__list"><li class="socials__item"><a href="#" class="socials__link socials__link--tw"><span class="hide">tw</span></a></li><li class="socials__item"><a href="#" class="socials__link socials__link--fb"><span class="hide">fb</span></a></li><li class="socials__item"><a href="#" class="socials__link socials__link--inst"><span class="hide">inst</span></a></li><li class="socials__item"><a href="#" class="socials__link socials__link--ghost"><span class="hide">ghost</span></a></li><li class="socials__item"><a href="#" class="socials__link socials__link--v"><span class="hide">v</span></a></li><li class="socials__item"><a href="#" class="socials__link socials__link--ln"><span class="hide">ln</span></a></li></ul></div></address></div>
+            <div
+            class="touch col-xs-6">
+              <h2 class="contacts__title">Contact Us</h2>
+              <form action="" class="touch__form">
+                <input type="text" placeholder="Your Name" class="input-text">
+                <input type="email" placeholder="Your Email" class="input-text">
+                <textarea type="text" placeholder="Write your message here" class="input-area"></textarea>
+                <input type="submit" value="send a message" class="submit__buttom">
+              </form>
+          </div>
+        </div>
+      </div>
+      </div>
       <div class="container">
-        <div class="row">
-          <div class="contacts">
-            <div class="container">
-              <div class="row">
-                <div class="contacts__wrap col-xs-6"><address class="address"><h2 class="contacts__title">Contact Us</h2><ul class="address__list"><li class="address__item address__item-addr">Poland, Cracow, Zielona 10</li><li class="address__item address__item-phone">+48 12 000 000 000</li><li class="address__item address__item-email">info@grandstand.com</li></ul></address>
-                  <div
-                  class="socials">
-                    <h2 class="contacts__title">Get Social</h2>
-                    <ul class="socials__list">
-                      <li class="socials__item">
-                        <a href="#" class="socials__link socials__link-tw"><img src="/images/icon-tw.png" alt="tw" class="socials__img"><span class="hide">tw</span></a>
-                      </li>
-                      <li class="socials__item">
-                        <a href="#" class="socials__link socials__link-fb"><img src="/images/icon-fb.png" alt="fb" class="socials__img"><span class="hide">fb</span></a>
-                      </li>
-                      <li class="socials__item">
-                        <a href="#" class="socials__link socials__link-ins"><img src="/images/icon-ins.png" alt="ins" class="socials__img"><span class="hide">ins</span></a>
-                      </li>
-                      <li class="socials__item">
-                        <a href="#" class="socials__link socials__link-ghost"><img src="/images/icon-ghost.png" alt="ghost" class="socials__img"><span class="hide">ghost</span></a>
-                      </li>
-                      <li class="socials__item">
-                        <a href="#" class="socials__link socials__link-v"><img src="/images/icon-v.png" alt="v" class="socials__img"><span class="hide">v</span></a>
-                      </li>
-                      <li class="socials__item">
-                        <a href="#" class="socials__link socials__link-in"><img src="/images/icon-in.png" alt="in" class="socials__img"><span class="hide">in</span></a>
-                      </li>
-                    </ul>
-                </div>
-              </div>
-              <div class="touch col-xs-6">
-                <h2 class="contacts__title">Contact Us<form action="" class="touch__form"><div class="input-group"><input type="text" placeholder="Your Name" class="input-text"><input type="text" placeholder="Your Email" class="input-text"><input type="text" placeholder="Write your message here" class="input-area"></div><div class="submit"><input type="submit" value="send a message" class="submit__buttom"></div></form></h2></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
         <div class="page-footer__wrap">
-          <div class="col-xs-6">
-            <a href="" class="page-footer__logo"><img src="images/footer-logo.png" alt="footer logo"></a>
-          </div>
-          <div class="col-xs-6">
-            <div class="copy">
-              <p class="copy__text">© 2015 GRANDSTAND. All Rights Reserved.</p>
+          <div class="row">
+            <div class="col-xs-4">
+              <a href="" class="page-footer__logo"><img src="images/footer-logo.png" alt="footer logo"></a>
+            </div>
+            <div class="col-xs-8">
+              <div class="copy">
+                <p class="copy__text">© 2015 GRANDSTAND. All Rights Reserved.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </footer>
     <!-- build:js js/vendor.js -->

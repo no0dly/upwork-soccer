@@ -1,11 +1,11 @@
 section.content
 	.teams
 		.content__title
-			.content-title__text teams
+			.content-title__text#teams teams
 		.row
 			ul.teams__list
 				each image in [1,2,3,1]
-					li.teams__item.col-sm-4.col-xs-12
+					li.teams__item
 						a.teams__link(class="fancybox" rel="group" href="images/image" + image + ".jpg")
 							img.teams__img(src="images/image" + image + ".jpg", alt= image + " team")
 						.shadow
@@ -15,4 +15,4 @@ section.content
 								h2.teams-title__text Grandstand tournaments
 							.teams__text
 								.teams-text__content Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
-							a.teams-content__read(href="#") Read More
+								a.teams-content__read(href="#") Read More

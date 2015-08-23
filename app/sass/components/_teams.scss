@@ -18,6 +18,10 @@
 	margin-bottom: 25px;
 }
 
+.teams-text__content {
+	padding-bottom: 25px;
+}
+
 .teams-title__text {
 	font-size: 1.125em;
 	font-family: 'roboto_slabbold';
@@ -35,6 +39,7 @@
 	font-family: 'roboto_slabbold';
 	color: #b81401;
 	text-decoration: none;
+	display: block;
 	&:hover {
 		text-decoration: underline;
 	}
