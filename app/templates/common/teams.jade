@@ -1,18 +1,23 @@
 section.content
 	.teams
+		ul.navigation__list.mobile
+			each item in ['location', 'grandstand', 'teams', 'sponsors', 'contacts']
+				li.navigation__item
+					a.navigation__link(href="#" + item)= item
 		.content__title
 			#teams.content-title__text.tracked teams
-		.row
-			ul.teams__list
-				each image in [1,2,3,1]
-					li.teams__item
-						a.teams__link(class="fancybox" rel="group" href="images/image" + image + ".jpg")
-							img.teams__img(src="images/image" + image + ".jpg", alt= image + " team")
-						.shadow
-							img(src="images/shadow.png", alt="").shadow__img
-						.teams__content
-							.teams__title
-								h2.teams-title__text Grandstand tournaments
-							.teams__text
-								.teams-text__content Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
-								a.teams-content__read(href="#") Read More
+		.container
+			.row
+				ul.teams__list
+					each image in [1,2,3,1]
+						li.teams__item
+							a.teams__link(class="fancybox" rel="group" href="images/image" + image + ".jpg")
+								img.teams__img(src="images/image" + image + ".jpg", alt= image + " team")
+							.shadow
+								img(src="images/shadow.png", alt="").shadow__img
+							.teams__content
+								.teams__title
+									h2.teams-title__text Grandstand tournaments
+								.teams__text
+									.teams-text__content Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
+									a.teams-content__read(href="#") Read More

@@ -76,6 +76,9 @@
 	bottom: 65px;
 	z-index: 0;
 }
+.bx-wrapper .bx-controls-direction a {
+	z-index: 998;
+}
 
 //teams
 .teams .bx-wrapper .bx-controls-direction a {

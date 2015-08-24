@@ -14,8 +14,6 @@
 .sponsors__item {
 	min-height: 164px;
 	position: relative;
+	text-align: center;
 
-	&>img{
-		@include centerer (true, true);
-	}
 }

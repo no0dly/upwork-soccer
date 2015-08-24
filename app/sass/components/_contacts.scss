@@ -60,6 +60,7 @@
 	font-style: normal;
 	font-size: 16px;
 	padding: 5px 0;
+	color: #fff;
 
 }
 
@@ -92,9 +93,10 @@
 	display: block;
 	width: 40px;
 	height: 40px;
+	background: url('../images/social-sprite.png') no-repeat;
 }
 
-$types: tw, fb, inst , ghost, v, ln;
+$types: tw, fb, inst , ghost;
 
 @each $item in $types {
 
@@ -102,13 +104,27 @@ $types: tw, fb, inst , ghost, v, ln;
 	$n: index($types, $item);
 	
 	.socials__link--#{$item} {
-		background: url('../images/social-sprite.png') no-repeat;
-		background-position-x:(-($n - 1)*50 - 4)+ px ;
-		background-position-y: -55px;
+		background-position: ((-($n - 1)*50 - 4)+ px) -55px;
 
 		&:hover {
-			background-position-x:(-($n - 1)*50 - 4)+ px ;
-			background-position-y: -5px;
+			background-position: ((-($n - 1)*50 - 4) + px) -5px;
 		}
+	}
+}
+
+
+.socials__link--v {
+	background-position: -203px -55px;
+
+	&:hover {
+		background-position: -203px -5px;
+	}
+}
+
+.socials__link--ln {
+	background-position: -253px -55px;
+
+	&:hover {
+		background-position: -253px -5px;
 	}
 }

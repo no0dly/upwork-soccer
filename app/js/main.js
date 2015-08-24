@@ -1,27 +1,18 @@
 var app = (function () {
 
 	function setUpListeners(){
-		$('.navigation__trigger').on("click", _triggerNav);
-		$('.navigation__item a[href^="#"]').on('click', _scrolling);
-	}
-
-	function _triggerNav() {
-		
-		var
-			menu = $('.navigation__list');
-
-		menu.stop().slideToggle();
+		$('.navigation__link').on('click', _scrolling);
 	}
 
 	function _scrolling(e) {
 		e.preventDefault();
-		var
-			elementClick = $(this).attr("href"),
-			destination = $(elementClick).offset().top - 160,
-			body = $('body');
-
-
-		body.animate( { scrollTop: destination }, 1100 );
+		$.scrollTo(
+			$(this).attr("href"),
+			{
+				duration: 500,
+				offset: { 'left':0, 'top':-0.20*$(window).height() }
+			}
+		);
 	}
 
 	function _waypoint ( direction ) {
@@ -77,22 +68,35 @@ var app = (function () {
 				pager: true,
 				auto: true
 			});
-			$('.teams__list').bxSlider({
-				pager: false,
-				controls: true,
-				slideWidth: 320,
-				slideMargin: 20,
-				minSlides: 3,
-				maxSlides: 3
-			});
+			if($(window).width() > 600) {
+				$('.teams__list').bxSlider({
+					pager: false,
+					controls: true,
+					slideWidth: 320,
+					slideMargin: 20,
+					minSlides: 3,
+					maxSlides: 3
+				});
+			} else {
+				$('.teams__list').bxSlider({
+					pager: false,
+					controls: true,
+					slideWidth: 320,
+					slideMargin: 20,
+					minSlides: 1,
+					maxSlides: 1
+				});
+			}
+			
 			$('.tracked').waypoint({
 				handler: _waypoint,
-				offset: '20%'
+				offset: '25%'
 			});
 			$('.slide-menu').waypoint({
 				handler: _slideMenu,
 				offset: '15%'
 			});
+			
 		}
 	};
 

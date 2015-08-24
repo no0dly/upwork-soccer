@@ -1,53 +1,124 @@
 
-@media (max-width: $screen-xs-max){
+@media ( max-width: $screen-md-min ){
+	.navigation__lang {
+		width: 47%;
+	}
+
+	.navigation__social_list {
+		width: 50%;
+	}
+
 	.page-header {
-		padding-top: 0;
+		margin-bottom: 0;
+	}
+
+	.navigation__item {
+		margin-right: 15px;
+	}
+
+	.navigation__link {
+		font-size: 0.9em;
+	}
+
+	.grandstand .col-md-3 {
+		padding-left: 15px;
+	}
+	.location {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	.location {
+		margin-bottom: 20px;
+	}
+
+	.content-title__text {
+		font-size: 1.875em;
+		padding: 0 10px;
+	}
+
+	.contacts__title {
+		font-size: 1.875em;
+	}
+
+	.socials {
+		margin-bottom: 20px;
+	}
+
+	.copy__text {
+		font-size: 0.5em;
+	}
+
+	.navigation {
+		margin-bottom: 35px;
+	}
+
+	.navigation__item {
+		margin-bottom: 10px;
+	}
+
+	.navigation__social_list {
 		text-align: center;
 	}
 
-
-	.navigation__trigger {
-		display: block;
-	}
- 	.navigation{
- 		float: none;
-
-		&:before {
-			display: none;
-		}	
- 	}
- 	.navigation__list {
- 		display: none;
- 		width: 100%;
- 	}
- 	.navigation__item{
- 		display: block;
- 		width: 100%;
- 	}
-	.navigation__link{
-		text-align: left;
+	.teams .bx-wrapper .bx-controls-direction a {
+		opacity: 0;
+		&:hover {
+			opacity: 1;
+		}
 	}
 
-	.logo{
-		float: none;
-		display: inline-block;
-		margin-top: 40px;
+	.pinned .logo__wrap {
+		width: 100%;
+		height: 100%;
 	}
 
-	.about__block{
-		padding-left:10px;
+	.pinned .navigation__social_list {
+		display: none;
+	}
+	.pinned .navigation {
+		padding-top: 0;
 	}
 
-	.team__link {
-		border:5px solid #fff;
+	.grandstand__slogan {
+		font-size: 1.2em;
 	}
 
+	.navigation__lang {
+		padding: 10px 0 0;
+	}
+
+	.motto {
+		padding: 0;
+	}
+	.row {
+		margin: 0 -6px;
+	}
 }
 
-
-@media (min-width: $screen-xs-max){
-	.navigation__list {
-		display: block!important;
-		// width: 100%;
+@media (max-width: 460px) {
+	.navigation__social_list {
+		display: none;
 	}
+	.socials__item {
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.mobile {
+		display: block;
+		float: none;
+		margin-left: 10px;
+		margin-bottom: 20px;
+
+		.active {
+			color: #b81401;
+		}
+	}
+	.pinned .navigation__list {
+		display: none;
+	}
+
 }

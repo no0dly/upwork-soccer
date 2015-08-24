@@ -17,7 +17,7 @@
 // } fancy or sticky footer
 
 body {
-	background:#e8e8e8 url('../images/pattern.png');
+	background: #f3f3f3 url('../images/bg.png');
 }
 
 p {
@@ -164,4 +164,8 @@ p {
 	&:after {
 		right: 100%;
 	}
+}
+
+.mobile {
+	display: none;
 }

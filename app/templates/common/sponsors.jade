@@ -1,13 +1,17 @@
 section.content
+	ul.navigation__list.mobile
+		each item in ['location', 'grandstand', 'teams', 'sponsors', 'contacts']
+			li.navigation__item
+				a.navigation__link(href="#" + item)= item
 	.content__title
 			#sponsors.content-title__text.tracked sponsors
 	.sponsors
 		ul.sponsors__list.row
-			li.sponsors__item.col-xs-6.col-md-3
+			li.sponsors__item.col-xs-12.col-md-3
 				img(src="images/icon-legion.png", alt="")
-			li.sponsors__item.col-xs-6.col-md-3
+			li.sponsors__item.col-xs-12.col-md-3
 				img(src="images/icon-volcom.png", alt="")
-			li.sponsors__item.col-xs-6.col-md-3
+			li.sponsors__item.col-xs-12.col-md-3
 				img(src="images/icon-car.png", alt="")
-			li.sponsors__item.col-xs-6.col-md-3
+			li.sponsors__item.col-xs-12.col-md-3
 				img(src="images/icon-jart.png", alt="")
